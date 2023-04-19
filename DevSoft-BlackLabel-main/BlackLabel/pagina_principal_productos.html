@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_slider.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Pagina productos</title>
+</head>
+<body>
+    <header class="headerproductos">
+        <!--Inicio menu de inicio de sesión y registrarse atravez  de un icono-->
+        <div class="menu conteiner" style="background-color: #000000;">
+            <a href="BlackLabel.html" class="logo"><span class="material-symbols-outlined">sell</span>BlackLabel</a>
+                <input type="checkbox" id="menuproducto">
+                 
+            <!--Inicio del navbar-->
+            <nav class="navbar">
+                 <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">account_circle</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!--Inicio slider-->
+<section>
+    <div class="container-slider">
+        <div class="slider" id="slider">
+
+            <div class="slider__section">
+                <img src="imagenes/audifonos.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="imagenes/switch.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="imagenes/telefono.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="imagenes/productos_tecnologicos.jpg" alt="" class="slider__img">
+            </div>
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </div>
+<script src="slider.js"></script>
+</section>
+
+<!--Inicio catalogo de productos-->
+<div class="conte">
+    <a href="#"> 
+        <div class="card">
+            <img src="imagenes/celular.jpg">
+            <h1>Celular</h1>
+            <p>Ultima tecnologia</p>
+            <h3>Cop 500.000</h3>
+    
+        </div>
+    </a>
+
+
+    <a href="#"> 
+        <div class="card">
+            <img src="imagenes/televisor.png">
+            <h1>Televisor</h1>
+            <p>Ultima tecnologia</p>
+            <h3>Cop 500.000</h3>
+        </div>
+    </a>
+
+
+    <a href="#"> 
+        <div class="card">
+            <img src="imagenes/computaor.jpg">
+            <h1>Computador</h1>
+            <p>Ultima tecnologia</p>
+            <h3>Cop 500.000</h3>
+        </div>
+    </a>
+</div>
+<footer class="footerproductos">
+
+    <div class="footerproductos-content container">
+        <div class="link">
+
+            <table>
+
+                <th><a href="#"><img src="imagenes/facebook.jpg" height="25px" width="25px"></a></th>
+                <th><a href="#"><img src="imagenes/instagram.jpg" height="35px" width="37px"></a></th>
+                <th><a href="#"><img src="imagenes/twitter.jpg" height="20px" width="27px"></a></th>
+                
+            </table>
+        </div>
+
+        <div class="link">
+            <h3><span class="material-symbols-outlined">sell</span>BlackLabel</h3>
+        </div>
+
+        <div class="link">
+            <h3>&copy;2023-DevSoft.</h3>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
