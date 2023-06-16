@@ -1,5 +1,7 @@
-# Development Software Community B.J.J.E
-***
+# Development Software Community B.J.J.E 
+<!--![image](https://github.com/Brayan-Hc11/DevSoft_BlackLabel-per-/assets/118775234/976fef5f-6a98-490b-bc15-428265ae1347)-->
+
+*** 
 ## Autores
 - Brayan Andres Hernandez Colon  
 - Julian David Rojas Saavedra 
@@ -24,11 +26,16 @@ Nuestra misión es crear, desarrollar y diseñar softwares, para las microempres
 ## Visión 
 Nuestra visión es al año 2025, consolidarnos como una empresa reconocida a nivel local. Centrándonos principalmente en el cliente y sus necesidades. 
 
- 
 
-  
-## Prototipo de sistema de información 
+## Objetivo general de la empresa  
+Nuestro objetivo general como empresa es generar y desarrollar software con altos estándares de calidad para las microempresas solicitantes de nuestros servicios.
 
+## Objetivos específicos de le empresa  
+- Conocer la importancia presente de los softwares ante las microempresas 
+- Ser capaz de identificar cuando es necesario un software y cuando no 
+- Ser capaz de planificar un software, identificando de forma concisa su ciclo de vida 
+- Ser capaz de identificar problemas, entregando las soluciones más óptimas para estos 
+- Planificar y acordar reuniones para cumplir con los tiempos y proyectos acordados
 
-Este es un repositorio exclusrivo para el desarrollo del proyecto que se desarrollara en el Tecnólogo de Análsis y Desarrollo de Software 🛒
-
+## Objetivo general del proyecto 
+El objetivo general del proyecto es brindar un sistema de información para facilitar la adquisición de diversos productos, a través de distintas categorías y catálogos donde el comprador puede interactuar con el vendedor, conocer las especificaciones de los productos y comprarlos. Haciendo énfasis en la venta de los productos que no se logran vender con facilidad y siguen en stock (revenderlos).
