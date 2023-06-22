@@ -13,7 +13,7 @@
 - Esteban Salcedo Perez
 
 ## Insitución Formativa
-- Servicio Nacional de Apredizaje (Sena)
+- Servicio Nacional de Apredizaje (SENA)
 
 ## Programa Formativo
 - Tecnólogo en análisis y desarrollo de software
