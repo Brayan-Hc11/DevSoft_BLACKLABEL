@@ -1,5 +1,5 @@
 # Development Software Community B.J.J.E 
-<!--![image](https://github.com/Brayan-Hc11/DevSoft_BlackLabel-per-/assets/118775234/976fef5f-6a98-490b-bc15-428265ae1347)-->
+<!--![image](https://github.com/Brayan-Hc11/DevSoft_BlackLabel-per-/assets/118775234/976fef5f-6a98-490b-bc15-428265ae1347)--> 
 
 <div align="center">
 <img src="https://github.com/Brayan-Hc11/DevSoft_BlackLabel-per-/assets/115185706/f608b90e-7582-4c73-9147-91bbc7a07a09">
