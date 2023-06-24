@@ -1,0 +1,87 @@
+/*estilos para los formularios */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;500;600;700&display=swap');
+form
+{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 140px 35px;
+    border-radius: 25px;
+    border: 10px solid white ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 380px;
+}
+
+/*titulo dentro del formulario*/
+form h2 
+{
+    font-size: 35px;
+    color:#0d0d0d;
+    margin: 0;
+}
+
+/*parrafos dentro del formullario*/
+form p
+{
+    font-style: 16px;
+    color:#5e5e5e;
+    margin-bottom: 35px;
+}
+
+
+/*interacción en el formulario*/
+.input-wrapper 
+{
+    position: relative;
+    width: 305px;
+    margin-bottom: 35px;
+}
+
+/*entradas de datos desde el teclado*/
+input
+{
+    color: #000;
+    padding: 20px 15px 20px 60px;
+    width: 100%;
+    border-radius: 25px;
+    border: 0;
+    box-shadow: 0 0 20px rgba(192, 203, 251, 0.7);
+    /*outline: none;delineado en los campos*/
+    font-size: 16px;
+}
+
+/*palabras al interior de los campos */
+input::placeholder
+{
+    font-style: 16px;
+    color:#0d0d0d;
+}
+
+/*iconos de  los  campos*/
+.input-icon
+{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-55%);
+}
+
+/*estilos para el boton*/
+.btn
+{
+    padding: 20px;
+    background: linear-gradient(90deg,rgba(60, 60, 60,1)25%, rgba(90, 90 , 90,1)100%);
+    box-shadow: 0 0 20px rgba(192, 203, 251, 0.7);
+    color: #fff;
+    text-transform: uppercase;
+    font-style: 14px;
+    cursor: pointer;
+}
+
+/*estilos para el  boton interacción*/
+.btn:hover
+{
+    background:rgba(0, 0, 0);
+}
