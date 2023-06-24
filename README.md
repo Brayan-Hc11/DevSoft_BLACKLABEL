@@ -12,8 +12,8 @@
 - Jesus Layonel Cabezas Ordoñez 
 - Esteban Salcedo Perez
 
-## Insitución Formativa
-- Servicio Nacional de Apredizaje (SENA)
+## Instituto Formativo
+- Servicio Nacional de Apredizaje (SENA ceet)
 
 ## Programa Formativo
 - Tecnólogo en análisis y desarrollo de software
