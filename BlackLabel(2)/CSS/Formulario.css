@@ -1,6 +1,6 @@
 /*estilos para los formularios */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;500;600;700&display=swap');
-form
+/*form
 {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     padding: 140px 35px;
@@ -13,7 +13,7 @@ form
 }
 
 /*titulo dentro del formulario*/
-form h2 
+/*form h2 
 {
     font-size: 35px;
     color:#0d0d0d;
@@ -21,7 +21,7 @@ form h2
 }
 
 /*parrafos dentro del formullario*/
-form p
+/*form p
 {
     font-style: 16px;
     color:#5e5e5e;
@@ -30,7 +30,7 @@ form p
 
 
 /*interacción en el formulario*/
-.input-wrapper 
+/*.input-wrapper 
 {
     position: relative;
     width: 305px;
@@ -38,7 +38,7 @@ form p
 }
 
 /*entradas de datos desde el teclado*/
-input
+/*input
 {
     color: #000;
     padding: 20px 15px 20px 60px;
@@ -47,18 +47,18 @@ input
     border: 0;
     box-shadow: 0 0 20px rgba(192, 203, 251, 0.7);
     /*outline: none;delineado en los campos*/
-    font-size: 16px;
-}
+    /*font-size: 16px;
+}*/
 
 /*palabras al interior de los campos */
-input::placeholder
+/*input::placeholder
 {
     font-style: 16px;
     color:#0d0d0d;
 }
 
 /*iconos de  los  campos*/
-.input-icon
+/*.input-icon
 {
     position: absolute;
     height: 30px;
@@ -69,7 +69,7 @@ input::placeholder
 }
 
 /*estilos para el boton*/
-.btn
+/*.btn
 {
     padding: 20px;
     background: linear-gradient(90deg,rgba(60, 60, 60,1)25%, rgba(90, 90 , 90,1)100%);
@@ -81,7 +81,120 @@ input::placeholder
 }
 
 /*estilos para el  boton interacción*/
-.btn:hover
+/*.btn:hover
 {
     background:rgba(0, 0, 0);
+}*/
+
+h1{
+    text-align: center;
+    font-weight: 700;
 }
+
+form
+{
+    background: #fff;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px; 
+}
+
+.form
+{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo 
+{
+    position: relative;
+    margin: 45px ;
+}
+
+input
+{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid ;
+}
+
+input:focus
+{
+    outline: none;
+    color:  #5e5d5d;
+}
+
+label
+{
+     font-size: 16px;
+     position: absolute;
+     bottom: 0;
+     left: 5px;
+     top: 10px;
+     transition: 0.5s ease-in-out all;
+     pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label
+{
+    top: -14px;
+    font-size: 12px;
+    color:#2196f3;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before
+{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0%;
+    position: absolute;
+    background: linear-gradient(to right, #b06ab3, #4568dc);
+    transition: 0.3s ease with;
+    left: 0;
+}
+
+input:focus~.barra::before
+{
+    width: 100%;
+}
+
+button
+{
+    background: #4568dc;
+    background: -webkit-linear-gradient(to right, #b06ab3, #4568Dc);
+    background: linear-gradient(to right, #b06ab3, #4568Dc );
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto ;
+    color: white;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
