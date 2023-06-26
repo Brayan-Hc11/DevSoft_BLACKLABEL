@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--linkiamos metadatos-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--linkiamos las hojas de estilo y demas documentos-->
+        <link rel="stylesheet" href="CSS/styleProductos.css"><!--hoja deestilos de css-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+            <!--titulo que se vera en la pestaña del aplicativo web-->
+            <title>productos en BlackLabel</title>
+
+</head>
+
+
+<body>
+    
+<header>
+            <div class="container-hero">
+                <div class="container hero">
+                    <div class="customer-support">
+                        <a href="servicioCliente.html"><i class="fa-solid fa-headset"></i></a>
+                        <div class="content-customer-support">
+                            <span class="text">Soporte al cliente</span>
+                            <span class="number">123-456-7890</span>
+                        </div>
+                    </div>
+
+                    <div class="container-logo">
+                        <i class="fa-solid fa-tag"></i>
+                        <h1 class="logo"><a href="BlackLabel.html">BLacklabel</a></h1>
+                    </div>
+
+                    <div class="container-user">
+                        <a href="categorias.html"><i class="fa-solid fa-list"></i></a>
+                        <a href="acceder.html"><i class="fa-solid fa-user"></i></a>
+                        <a href="carritoCompras.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                        <div class="content-shopping-cart">
+                            <span class="text">carrito de compras</span>
+                            <span class="number">(0)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-navbar">
+                <nav class="navbar container">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="menu">
+                        <li><a href="#">categoria1</a></li>
+                        <li><a href="#">categoria2</a></li>
+                        <li><a href="#">categoria3</a></li>
+                        <li><a href="#">categoria4</a></li>
+                        <li><a href="#">categoria5</a></li>
+                        <li><a href="#">categoria6</a></li>
+                    </ul>
+
+                    <form class="search-form">
+                        <input type="search" placeholder="Buscar...">
+                        <button class="btn-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </nav>
+            </div>
+        </header>
+    <!--Decalaramos un div para el slider 1 -->
+    <div class="scrol">
+        <section class="slidersec">
+
+        <div class="container-slider">
+            <div class="slider" id="slider">
+
+                <div class="slider__section">
+                    <img src="imagenes/monitor.png" class="slider__img"></div>
+                
+                <div class="slider__section">
+                    <img src="imagenes/mesaelectronica.png" class="slider__img"></div>
+
+                <div class="slider__section">
+                    <img src="imagenes/audifonos.jpg" class="slider__img"></div>
+                
+                <div class="slider__section">
+                    <img src="imagenes/productos_tecnologicos.jpg" class="slider__img"></div>
+
+                <div class="slider__section">
+                    <img src="imagenes/televisor.png" class="slider__img"></div>
+                
+              
+                
+        </div>
+
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div><!--Controles de dirección (derecha)-->
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div><!--Controles de dirección (izquierda)-->
+    </div>
+
+    <!--Linkiamos hojas de js-->
+    <script src="js/slider.js"></script>
+    <script src="js/cabecera.js"></script>
+
+</section>
+
+<!--Inicio catalogo de productos-->
+
+<section>
+    <div class="conte">
+    
+        <a href="#"> 
+            <div class="card">
+                <img src="imagenes/celular.jpg">
+                <h1>Celular</h1>
+                <p>Ultima tecnologia</p>
+                <h3>Cop 750.000</h3> 
+            </div>
+        </a>
+
+        <a href="#"> 
+            <div class="card">
+                <img src="imagenes/televisor.png">
+                <h1>Televisor</h1>
+                <p>Ultima tecnologia</p>
+                <h3>Cop 2.500.000</h3>
+            </div>
+        </a>
+
+        <a href="#"> 
+            <div class="card">
+                <img src="imagenes/computaor.jpg">
+                <h1>Computador</h1>
+                <p>Ultima tecnologia</p>
+                <h3>Cop 600.000</h3>
+            </div>
+        </a>
+
+        <a href="#"> 
+            <div class="card">
+                <img src="imagenes/mesaelectronica.png">
+                <h1>Mesa electronica</h1>
+                <p>Ultima tecnologia</p>
+                <h3>Cop 1.000.000</h3>
+            </div>
+        </a>
+
+        <a href="#"> 
+            <div class="card">
+                <img src="imagenes/motog52.png">
+                <h1>Motog52</h1>
+                <p>Ultima tecnologia</p>
+                <h3>Cop 500.000</h3>
+            </div>
+        </a>
+
+</section>
+<script src="https://kit.fontawesome.com/b217920474.js" crossorigin="anonymous"></script>
+<script src="slider.js"></script>
+</body>
+</html>
