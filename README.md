@@ -30,7 +30,6 @@ Nuestra misión es crear, desarrollar y diseñar softwares, para las microempres
 ## Visión 
 Nuestra visión es al año 2025, consolidarnos como una empresa reconocida a nivel local. Centrándonos principalmente en el cliente y sus necesidades. 
 
-
 ## Objetivo general de la empresa  
 Nuestro objetivo general como empresa es generar y desarrollar software con altos estándares de calidad para las microempresas solicitantes de nuestros servicios.
 
@@ -43,3 +42,7 @@ Nuestro objetivo general como empresa es generar y desarrollar software con alto
 
 ## Objetivo general del proyecto 
 El objetivo general del proyecto es brindar un sistema de información para facilitar la adquisición de diversos productos, a través de distintas categorías y catálogos donde el comprador puede interactuar con el vendedor, conocer las especificaciones de los productos y comprarlos. Haciendo énfasis en la venta de los productos que no se logran vender con facilidad y siguen en stock (revenderlos).
+
+
+
+
