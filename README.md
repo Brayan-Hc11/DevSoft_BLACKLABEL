@@ -19,7 +19,7 @@
 - Tecnólogo en análisis y desarrollo de software.
 
 ## Periodo
-- Trimestre II
+- Trimestre II.
 
 ## Lugar 
 - Colombia/Bogotá D.C.
