@@ -16,7 +16,7 @@
 - Servicio Nacional de Apredizaje (SENA CEET).
 
 ## Programa Formativo
-- Tecnólogo en análisis y desarrollo de software
+- Tecnólogo en análisis y desarrollo de software.
 
 ## Periodo
 - Trimestre II
