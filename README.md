@@ -34,11 +34,11 @@ Nuestra visión es al año 2025, consolidarnos como una empresa reconocida a niv
 Nuestro objetivo general como empresa es generar y desarrollar software con altos estándares de calidad para las microempresas solicitantes de nuestros servicios.
 
 ## Objetivos específicos de le empresa  
-- Conocer la importancia presente de los softwares ante las microempresas 
-- Ser capaz de identificar cuando es necesario un software y cuando no 
-- Ser capaz de planificar un software, identificando de forma concisa su ciclo de vida 
-- Ser capaz de identificar problemas, entregando las soluciones más óptimas para estos 
-- Planificar y acordar reuniones para cumplir con los tiempos y proyectos acordados
+- Conocer la importancia presente de los softwares ante las microempresas.
+- Ser capaz de identificar cuando es necesario un software y cuando no.
+- Ser capaz de planificar un software, identificando de forma concisa su ciclo de vida.
+- Ser capaz de identificar problemas, entregando las soluciones más óptimas para estos.
+- Planificar y acordar reuniones para cumplir con los tiempos y proyectos acordados.
 
 ## Objetivo general del proyecto 
 El objetivo general del proyecto es brindar un sistema de información para facilitar la adquisición de diversos productos, a través de distintas categorías y catálogos donde el comprador puede interactuar con el vendedor, conocer las especificaciones de los productos y comprarlos. Haciendo énfasis en la venta de los productos que no se logran vender con facilidad y siguen en stock (revenderlos).
