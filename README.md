@@ -7,13 +7,13 @@
 
 *** 
 ## Autores
-- Brayan Andres Hernandez Colon  
-- Julian David Rojas Saavedra 
-- Jesus Layonel Cabezas Ordoñez 
-- Esteban Salcedo Perez
+- Brayan Andres Hernandez Colon.  
+- Julian David Rojas Saavedra.
+- Jesus Layonel Cabezas Ordoñez.
+- Esteban Salcedo Perez.
 
 ## Instituto Formativo
-- Servicio Nacional de Apredizaje (SENA CEET)
+- Servicio Nacional de Apredizaje (SENA CEET).
 
 ## Programa Formativo
 - Tecnólogo en análisis y desarrollo de software
