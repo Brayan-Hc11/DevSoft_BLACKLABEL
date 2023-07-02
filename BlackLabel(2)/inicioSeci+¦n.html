@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+            <!--Linkiamos hojas de estilos-->        
+            <link rel="stylesheet" href="CSS/Formulario.css" >
+            <link rel="stylesheet" href="CSS/CabeceraFooter.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+            <title>Registro</title>
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="nav">
+                <div class="logo"><span class="material-symbols-outlined">sell</span> BlackLabel </a></div>
+            </nav>
+        </header>
+
+
+        <!--Iniciamos el formulario de registro-->
+        <form method="post">
+            <h2><i>Inicia Sesión</i></h2>
+                <p>Si no tienes una cuenta puedes  <a href="registro.html">Registrarte</a></p>
+
+                <!--Nombre del usuario-->
+                <div class="input-wrapper">
+                    <input type="text" name="Nombre_Usuario" placeholder="Nombre de Usuario ">
+                    <img src="imagenes/acceso.png" width="43" height="43"  class="input-icon">
+                </div>
+                <!--Contraseña-->
+                <div class="input-wrapper">
+                    <input type="password" name="Contraseña" placeholder="Contraseña">
+                    <img src="imagenes/candado.png" width="43" height="43" class="input-icon">
+                </div>
+    
+                <!--Ingresaremos los datos a la base de datos por medio del boton registrate-->
+                <input type="submit" name="register" value="Inicia sesión" class="btn">
+        
+        </form>
+<!--Declaración de footer-->
+<footer>
+    <div class="footer-content">
+        <h3><span class="material-symbols-outlined">sell</span> BlackLabel </a></h3>
+            <p>Terminos  y condiciones</p>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright &copy;2023 Devsoft . desifned by <span>nethunt</span></p>
+    </div>
+</footer>
+
+    </body>
+</html>
