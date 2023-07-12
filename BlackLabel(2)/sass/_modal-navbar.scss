@@ -1,0 +1,37 @@
+//Navbar en un apartado movil
+@use 'variables';
+@use 'mixins';
+
+.modal-navbar{
+    //fondo del navbar
+    &__background{
+        @include mixins.modal-background
+    }
+    //fondo de color
+    background-color: variables.$White;
+    width: 250px;
+    height: 100%;
+    padding: 28px 24px;
+  
+    //items
+    &__items{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        height: 200px;
+        list-style: none;
+        margin-top: 50px;
+    }
+    //links dentro del menu del navbar
+    &__link{
+        text-decoration: none;
+        color:variables.$Very-vark-blue;
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+    //Icono de cerrar ventana
+    &__close-icon:hover{
+        cursor: pointer;
+    }
+
+}
