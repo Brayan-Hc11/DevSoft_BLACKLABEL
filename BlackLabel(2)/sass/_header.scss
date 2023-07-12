@@ -1,0 +1,87 @@
+//Importamos el mixsin llamado variables
+@use 'variables';
+
+/*LLamamos a la clase header*/
+.header{
+    border: 10px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    padding: 0 24px;
+    //nesting para el reponsive
+    @media (min-width: 1115px){
+        height: 112px;
+        border-bottom: 1px solid variables.$Grayish-blue;
+    }
+    //LLamamos al apartado de navegación
+    &__navigation{
+        border: 5px solid ;
+        width: 175px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        //nesting para responsive
+        @media (min-width: 1115px){
+            width: 590px;
+        };
+    }
+    //LLamamos al menu de hamburguesa
+    &__menu{
+        //iniciamos estilos hover
+        &:hover{
+            cursor: pointer;
+        }
+        //suspendemos el icono de menu
+        @media (min-width: 1115px){
+            display: none;
+        }
+    }
+    //LLamamos al contenedor del carrito y avatar
+   &__cart-avatar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70px;
+        //apartado responsive
+        @media (min-width: 1115px){
+            width: 125px;
+        }
+   }
+   //estilos para el carrito y notificación
+   &__cart{
+    //posicion del elmento padre 
+    position: relative;
+    //notificación de los elementos al interior del carrito
+    &--notification{
+        display: none;
+        background-color:  variables.$Orange;
+        width: 15px;
+        height: 12px;
+        border-radius: 16px;
+        position: absolute;
+        top: -7px;
+        right: -1px;
+        font-size: 0.6em;
+        text-align: center;
+        color:variables.$White;
+    }
+   }
+   &:hover{
+     cursor: pointer;
+   }
+    //estilos en elemento del avatar
+    &__avatar{
+     width: 24px;
+     //apartado responsive
+    @media  (min-width:  1115px){
+        width: 48px;
+        }
+        &:hover{
+            cursor: pointer;
+            border: 2px solid variables.$Orange;
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@use 'variables' as V;
+@use 'mixins';
+
+//galaria modal
+.modal-gallery{
+   
+   &__background{
+   @include mixins.modal-background;
+    display: none;
+    //display: grid;
+    place-content: center;
+   }
+   //contenedor del icono de cerrar
+   &__close-container{
+      text-align: center;
+      height: 50px;
+      margin-left: 580px;
+   }
+   //icono de cerrar
+   &__close{
+      width: 20px;
+      &:hover{
+         cursor: pointer;
+         content: url(../images/icon-close\ white.svg);
+      }
+   }
+   //control de la imagen central
+   &__image-container{
+      background-image: url(../images/image-product-1.jpg);
+      width: 500px;
+      height: 500px;
+      background-size: cover;
+      border-radius: 16px;
+      margin-bottom: 32px;
+      margin-left: 250px;
+      position: relative;
+      place-content: center;
+   }
+   //imagenes de miniaturas
+   &__thumnails{
+      display: flex;
+      gap: 15px;
+      place-content: center;
+     }
+  //miniatura individual
+  &__thumnail{
+      width: 90px;
+      border-radius: 19px;
+      &:hover{
+          cursor: pointer;
+          border: 2px solid V.$Orange;
+      }
+  }
+  //botones para cambiar de la imagen( Izquierda)
+  &__previus{
+      @include mixins.image-btn(230px, -15px, true)
+  }
+  //botones para cambiar de la imagen( Derecha)
+  &__next{
+   @include mixins.image-btn(230px, 480px, true)
+}
+}
