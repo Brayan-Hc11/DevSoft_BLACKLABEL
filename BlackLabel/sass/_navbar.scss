@@ -1,0 +1,29 @@
+@use 'variables';
+
+//estilos para el navbar
+
+.navbar{
+    width: 400px;
+    display: none;
+    //itens y direcciones
+    &__items{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    //links dentro del navbar
+    &__link{
+        text-decoration: none;
+        color: variables.$Dark-grayish-blue;
+        display: block;
+        height: 112px;
+        padding-top: 50px;
+        //linea por debajo de cada elemento 
+        &:hover{
+            border-bottom: 4px solid variables.$Orange;
+        }
+    }
+    @media(min-width: 1115px){
+        display: block;
+    }
+}
