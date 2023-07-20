@@ -1,0 +1,30 @@
+@use 'variables' as V ;
+@use 'mixins';
+//estilos para el boton del carrito
+
+.input{
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    //estilos para el boton de menos
+    &__minus{
+        @include mixins.chanNumber(25px ,5px);
+    }
+     //estilos para el boton de agregar
+     &__plus{
+        @include mixins.chanNumber(20px, 6px);
+    }
+    //numero de elementos dentro dek carrito
+    &__number{
+        width: 100%;
+        border: none;
+        background-color: V.$Light-grayish-blue;
+        font-size: 1.2em;
+        font-weight: 700;
+        font-family:V.$Font;
+        text-align: center;
+        outline: none;
+        border-radius: 50px;
+    }
+    
+}
