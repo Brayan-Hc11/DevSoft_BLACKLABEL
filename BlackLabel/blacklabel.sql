@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-08-2023 a las 14:34:26
+-- Tiempo de generación: 02-08-2023 a las 15:28:15
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.1.12
 
@@ -41,7 +41,7 @@ CREATE TABLE `carrito` (
 --
 
 CREATE TABLE `categorias` (
-  `id_categorias` int(10) NOT NULL COMMENT 'Aquí se almacena el identificador de la categoría. ',
+  `id_categoria` int(10) NOT NULL COMMENT 'Aquí se almacena el identificador de la categoría. ',
   `categoria` text NOT NULL COMMENT 'Aquí se guarda el nombre de la categoría. '
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
@@ -80,7 +80,8 @@ CREATE TABLE `productos` (
   `nombre_producto` varchar(30) NOT NULL COMMENT 'Aquí se alojara el nombre de los productos.',
   `id_catalogo` int(30) NOT NULL COMMENT 'Aquí se alojara el identificador numerico del catalogo.',
   `documento_creador` int(30) NOT NULL COMMENT 'Aquí se alojara en documento del creador del producto.',
-  `precio_producto` int(30) NOT NULL COMMENT 'Aquí se guardara el precio del prodcuto seleccionado.'
+  `precio_producto` int(30) NOT NULL COMMENT 'Aquí se guardara el precio del prodcuto seleccionado.',
+  `id_estado` int(10) NOT NULL COMMENT 'Aqui se almacenara el estado del producto'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 -- --------------------------------------------------------
@@ -124,7 +125,7 @@ ALTER TABLE `carrito`
 -- Indices de la tabla `categorias`
 --
 ALTER TABLE `categorias`
-  ADD PRIMARY KEY (`id_categorias`);
+  ADD PRIMARY KEY (`id_categoria`);
 
 --
 -- Indices de la tabla `estados`
@@ -147,6 +148,7 @@ ALTER TABLE `productos`
   ADD PRIMARY KEY (`id_producto`),
   ADD UNIQUE KEY `Id_Catalogo` (`id_catalogo`,`documento_creador`),
   ADD UNIQUE KEY `Precio_producto` (`precio_producto`),
+  ADD UNIQUE KEY `id_estado` (`id_estado`),
   ADD KEY `Documento_Creador` (`documento_creador`);
 
 --
@@ -177,7 +179,7 @@ ALTER TABLE `carrito`
 -- AUTO_INCREMENT de la tabla `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `id_categorias` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Aquí se almacena el identificador de la categoría. ';
+  MODIFY `id_categoria` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Aquí se almacena el identificador de la categoría. ';
 
 --
 -- AUTO_INCREMENT de la tabla `permisos`
@@ -218,7 +220,7 @@ ALTER TABLE `carrito`
 -- Filtros para la tabla `categorias`
 --
 ALTER TABLE `categorias`
-  ADD CONSTRAINT `categorias_ibfk_1` FOREIGN KEY (`Id_Categorias`) REFERENCES `productos` (`Id_Catalogo`);
+  ADD CONSTRAINT `categorias_ibfk_1` FOREIGN KEY (`id_categoria`) REFERENCES `productos` (`Id_Catalogo`);
 
 --
 -- Filtros para la tabla `permisos`
@@ -226,12 +228,6 @@ ALTER TABLE `categorias`
 ALTER TABLE `permisos`
   ADD CONSTRAINT `permisos_ibfk_1` FOREIGN KEY (`Documento`) REFERENCES `usuarios` (`Documento`),
   ADD CONSTRAINT `permisos_ibfk_2` FOREIGN KEY (`Id_Rol`) REFERENCES `roles` (`Id_rol`);
-
---
--- Filtros para la tabla `productos`
---
-ALTER TABLE `productos`
-  ADD CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`documento_creador`) REFERENCES `usuarios` (`documento`);
 
 --
 -- Filtros para la tabla `usuarios`
