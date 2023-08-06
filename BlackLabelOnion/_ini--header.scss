@@ -1,0 +1,110 @@
+/*invocamos las variables*/
+@use 'variables' as v;
+
+/*ESTILOS GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans',sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/*ESTILOS EN EL CONTENEDOR PRIMARIO*/
+.container{
+        max-width: 1200px;
+        margin: 0 auto;
+}
+.header{
+        text-align: center;
+        align-items: center;
+        background-image: url(img_fondo_blacklabel.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        display: flex;
+        min-height: 70vh;
+    /*estilos menu*/
+    &__menu{
+        align-items: center;
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        justify-content: space-between;
+    }
+    /*estilos logo0*/
+    &__logo{
+        color:v.$White;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700
+    }
+    /*estilos en el navbar*/
+    &__navbar ul li {
+        position: relative;
+        float: left;
+    }
+    &__navbar ul li a{
+        font-size: 18px;
+        padding: 16px;
+        color:v.$White;
+        display: block;
+        font-weight: 400;
+    /*estilos hover*/
+        &:hover{
+        color: v.$Principal;
+        }
+    }
+    /*estilos parte media del header*/
+    &__medio h1 {    
+        font-size: 80px;
+        line-height: 90px;
+        color:v.$White-light;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-family:'Times New Roman', Times, serif;
+        text-align: center;
+        background-color:v.$PrincipalOpacity;
+    }
+    /*parrafo al interior*/
+    &__medio p {
+        font-size: 39px;
+        color:v.$White;
+        margin-bottom: 25px;
+    }
+    /*estilos para el boton*/
+    &__btn-1{
+        background-color:v.$Principal;
+        padding: 10px 15px; 
+        color:v.$White;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: Open Sans;
+        border-radius: 30px;
+        /*estilos hover en el boton*/
+        &:hover{
+        background-color:v.$Principal-light;
+        }
+    }
+    /*estilos para la imagen*/
+    &__img {
+        position: absolute;
+        top: 400px;
+        width:100%;
+        height:30%;
+        z-index: 2;
+        padding-bottom: 1rem;
+    }
+}
