@@ -22,7 +22,7 @@
 - Trimestre III.
 
 ## Lugar 
-- Colombia/Bogotá D.C.
+- Bogotá D.C./Colombia
 
 ## Misión 
 Nuestra misión es crear, desarrollar y diseñar softwares, para las microempresas que soliciten nuestros servicios. 
