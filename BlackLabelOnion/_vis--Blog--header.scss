@@ -1,0 +1,36 @@
+/*invocamos las variables*/
+@use 'variables' as v;
+
+.PrincipalBlog{
+    background-color: v.$Black;
+&__hero{
+    border: 5px solid pink;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        color:v.$White;
+    }
+&__logo{
+        margin-left: 40%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: .5rem;
+        
+        }
+&__logo i{
+        font-size: 3rem;
+        color: v.$White;
+        }
+&__logo h1  a{
+        text-align: center;
+        align-items: center;
+        text-decoration: none;
+        color:v.$White;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        }
+}
+
