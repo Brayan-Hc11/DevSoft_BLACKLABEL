@@ -1,0 +1,101 @@
+/*invocamos las variables*/
+@use 'variables' as v;
+
+.About{
+    padding: 100px 0;
+&__Content{
+        display: flex;
+    &--1{
+            width: 50%;
+        }
+        & h3{
+                font-size: 28px;
+                color: v.$TituloInterno;
+                text-transform: uppercase;
+                margin-bottom: 35px;
+        }
+        & p{
+                color: v.$TextoInterno;
+                font-size: 16px;
+            }
+    &--2{
+            width: 50%;
+            padding-left: 150px;
+        }
+    &--img{
+            display: flex;
+            align-items: center;
+            margin-bottom: 70px;
+        & img{
+                width: 80px;
+                margin-bottom: 10px ;
+            }
+        }
+    &--Txt{
+            padding-left: 25px;
+        & h4{
+                font-size: 16px;
+                color: hsl(300, 1%, 65%);
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+.Servicios{
+    background-color:hsl(330, 1%, 69%);
+    padding: 100px 0;
+&--txt{
+        text-align: center;
+    & h2{
+            font-size: 55px;
+            line-height: 50px;
+            text-transform: uppercase;
+            color: v.$Fondo;
+            margin-bottom: 20px;
+        }
+    & p {
+            font-size: 16px;
+            color: #3a3a3a;
+            margin-bottom: 35px;
+        }
+    }
+&__Contenido{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    & img{
+            width: 100%;
+            height: 350px;
+        }
+    }
+}
+.Footer__Contacto{
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+& h2{
+            font-size: 55px;
+            line-height: 50px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: hsl(30, 75%, 98%);
+    }
+}
+.Footer__Form--group{
+    display: flex;
+}
+.Footer__Form--Campo{
+    padding: 13px 10px;
+    background-color: hsl(330, 1%, 69%);
+    color:v.$TituloDestacado;
+    outline: none;
+    font-size: 16px;
+    margin: 0 5px 5px 0;
+    border: 0; 
+&::placeholder{
+        color:hsl(30, 75%, 98%);
+        text-transform: capitalize;
+
+    }
+}
