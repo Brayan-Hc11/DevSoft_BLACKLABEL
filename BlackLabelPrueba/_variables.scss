@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;500;600;700&display=swap');
+
+$Principal:hsl(194, 100%, 15%);
+$PrincipalOpacity:hsla(194, 100%, 15%, 0.85);
+$Principal-light:hsl(194, 95%, 25%);
+$PrincipalTransition:hsl(201, 88%, 25%); 
+$PrincipalCover:hsl(201, 88%, 25%);
+
+$White:hsl(0, 0%, 100%);
+$White-light:hsl(0, 0%, 100%);
+
+$Black:hsl(0,0,0);
+
+$Fondo:hsl(250, 7%, 18%);
+
+$Font:'PT Sans',sans-serif;
+
+$Titulo:hsl(228, 5%, 21%);
+$TituloSmall:hsl(0, 0%, 8%);
+$TituloNiveles:hsl(228, 5%, 21%);
+$TituloDestacado:hsl(30, 80%, 98%);
+$TituloInterno:hsl(252, 3%, 66%);
+
+$TextoLight:hsl(0,0%,89%);
+$Texto:hsl(230, 4%, 27%);
+$TextoEnunciado:hsl(0, 0%, 47%);
+$TextoInterno:hsl(252, 2%, 52%);
+
+$ParrafoColor:hsl(0, 0%, 85%);
+
+$ElementRed:hsl(0, 100%, 50%);
