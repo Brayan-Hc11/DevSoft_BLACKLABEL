@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-08-2023 a las 17:45:13
--- Versión del servidor: 10.4.27-MariaDB
--- Versión de PHP: 8.1.12
+-- Tiempo de generación: 25-08-2023 a las 23:30:30
+-- Versión del servidor: 10.1.38-MariaDB
+-- Versión de PHP: 7.3.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `blacklabel_p`
+-- Base de datos: `blacklabel`
 --
 
 -- --------------------------------------------------------
@@ -33,7 +34,7 @@ CREATE TABLE `carrito` (
   `precio_producto` double NOT NULL COMMENT 'Aquí se alojara el precio del producto.	',
   `cantidad_producto` int(30) NOT NULL COMMENT 'podremos visualizar la cantidad de productos que se compraron.',
   `total_producto` int(30) NOT NULL COMMENT 'Aquí se guardaran el total de los productos seleccionados.'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -44,7 +45,7 @@ CREATE TABLE `carrito` (
 CREATE TABLE `categorias` (
   `id_categoria` int(10) NOT NULL COMMENT 'Aquí se almacenara el identificador de la categoría.',
   `categoria` tinytext NOT NULL COMMENT 'Aquí se guarda el nombre de la categoría.'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -55,7 +56,7 @@ CREATE TABLE `categorias` (
 CREATE TABLE `estados` (
   `id_estado` int(10) NOT NULL COMMENT 'Aquí se alojará el identificador del estado.',
   `estado` tinytext NOT NULL COMMENT 'Aquí se almacenará la palabra activo o inactivo'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -67,7 +68,7 @@ CREATE TABLE `permisos` (
   `id` int(10) NOT NULL COMMENT 'Aquí se alojara el identificador del permiso.',
   `documento` varchar(30) NOT NULL COMMENT '	Aquí se alojara en numero del documento de quien posee el permiso.',
   `id_rol` int(10) DEFAULT NULL COMMENT '	Aquí se alojara el identificador numérico del permiso.'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -83,7 +84,7 @@ CREATE TABLE `productos` (
   `documento_creador` varchar(30) NOT NULL COMMENT 'Aquí se alojara en documento del creador del producto.	',
   `precio_producto` double NOT NULL COMMENT 'Aquí se guardara el precio del prodcuto seleccionado.',
   `id_estado` int(10) NOT NULL COMMENT '	Aqui se almacenara el estado del producto'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -94,7 +95,7 @@ CREATE TABLE `productos` (
 CREATE TABLE `roles` (
   `id_rol` int(10) NOT NULL COMMENT 'Aquí se almacena el identificador del rol.',
   `rol` tinytext NOT NULL COMMENT 'Aquí se almacena el nombre de cada rol.'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -106,10 +107,11 @@ CREATE TABLE `usuarios` (
   `id_usuario` int(10) NOT NULL COMMENT 'Aquí se le asignara un numero auto-incrementado por codigo a cada usuario.',
   `documento` varchar(30) NOT NULL COMMENT 'Aquí se almacenará el documento del usuario.',
   `nombre_usuario` tinytext NOT NULL COMMENT '	Aquí se almacenará el nombre del usuario.',
+  `apellido_usuario` tinytext NOT NULL COMMENT '	Aquí se almacenará el apellido del usuario.',
   `contraseña` varchar(20) NOT NULL COMMENT 'Aquí se almacenará la contraseña del usuario.',
   `correo` varchar(30) NOT NULL COMMENT '	Aquí se almacenará el correo electrónico del usuario.',
   `id_estado` int(10) NOT NULL COMMENT 'Aquí se almacenará el estado del usuario(activo o inactivo).'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Índices para tablas volcadas
