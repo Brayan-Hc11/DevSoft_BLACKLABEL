@@ -106,6 +106,7 @@ CREATE TABLE `usuarios` (
   `id_usuario` int(10) NOT NULL COMMENT 'Aquí se le asignara un numero auto-incrementado por codigo a cada usuario.',
   `documento` varchar(30) NOT NULL COMMENT 'Aquí se almacenará el documento del usuario.',
   `nombre_usuario` tinytext NOT NULL COMMENT '	Aquí se almacenará el nombre del usuario.',
+  `apellido_usuario` tinytext NOT NULL COMMENT '	Aquí se almacenará el apellido del usuario.',
   `contraseña` varchar(20) NOT NULL COMMENT 'Aquí se almacenará la contraseña del usuario.',
   `correo` varchar(30) NOT NULL COMMENT '	Aquí se almacenará el correo electrónico del usuario.',
   `id_estado` int(10) NOT NULL COMMENT 'Aquí se almacenará el estado del usuario(activo o inactivo).'
