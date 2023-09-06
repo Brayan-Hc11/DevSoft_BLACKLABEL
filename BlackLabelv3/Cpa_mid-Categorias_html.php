@@ -88,10 +88,42 @@
                 <a href="Prod_Tableta1.php">Tablet Samsung Galaxy</a>
             </div>
 
-            <div class="wrap__store-wrapper--products-list--item" category="Audifonos">
-                <img src="./productos/img_audifonos2.png" alt="">
-                <a href="Prod_Tableta2.php">audifono</a>
+            <div class="wrap__store-wrapper--products-list--item" category="Tabletas">
+                <img src="productos/img_Tableta2.png" alt="">
+                <a href="Prod_Tableta2.php">Nueva Tableta Ma11</a>
             </div>
+
+            <div class="wrap__store-wrapper--products-list--item" category="Tabletas">
+                <img src="productos/img_Tableta3.png" alt="">
+                <a href="Prod_Tableta3.php">Tableta Inteligente 10.1</a>
+            </div>
+
+            <div class="wrap__store-wrapper--products-list--item" category="Tabletas">
+                <img src="productos/img_Tableta4.png" alt="">
+                <a href="Prod_Tableta4.php">Tableta Inteligente 10.1</a>
+            </div>
+
+            <div class="wrap__store-wrapper--products-list--item" category="Tabletas">
+                <img src="productos/img_Tableta5.png" alt="">
+                <a href="Prod_Tableta5.php">Tableta Inteligente 10.1</a>
+            </div>
+
+            <div class="wrap__store-wrapper--products-list--item" category="Tabletas">
+                <img src="productos/img_Tableta6.png" alt="">
+                <a href="Prod_Tableta6.php">8+256 Gb, 24 + 48 Mp</a>
+            </div>
+
+            <div class="wrap__store-wrapper--products-list--item" category="Tabletas">
+                <img src="productos/img_Tableta7.png" alt="">
+                <a href="Prod_Tableta7.php">12 10.1 Inch X11pro</a>
+            </div>
+
+            <div class="wrap__store-wrapper--products-list--item" category="Tabletas">
+                <img src="productos/img_Tableta5.png" alt="">
+                <a href="Prod_Tableta5.php">Tableta Inteligente 10.1</a>
+            </div>
+
+
         </section>
    
     </div>

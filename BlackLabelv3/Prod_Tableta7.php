@@ -20,18 +20,18 @@
 
 		<main>
 			<div class="container-img">
-				<img src="productos/img_Tableta2.png"alt="imagen-producto"/>
+				<img src="productos/img_Tableta5.png"alt="imagen-producto"/>
 			</div>
 			
             <div class="container-info-product">
 				<div class="container-price">
-					<span>$ 419.419</span><span>4% OFF</span>
+					<span>$ 331.963</span><span></span>
 					<i class="fa-solid fa-angle-right"></i>
 				</div>
 
 				<div class="container-details-product">
 					<div class="form-group">
-                    2023 Nueva Tableta Ma11 Ram 12gb Rom 512gb 10,1
+                    Tableta Inteligente 10.1 8+256 Gb, 24 + 48 Mp, Android 12 B
 					</div>
 					
                     <div class="form-group">
@@ -64,27 +64,7 @@
 					<div class="text-description">
 						<p>
 <ul>
-    <li>Estado: nuevo </li>
-    <li>Sistema operativo: Android 12.0 </li>
-    <li>Pantalla: pantalla táctil capacitiva IPS de 10 pulgadas y 5 puntos</li>
-    <li>Procesador: mtk6797 10 núcleos</li>
-    <li>Ram: 12 GB</li>
-    <li>Rom: 512 GB</li>
-    <li>Teléfono de llamada: sí, alojamiento doble con tarjeta doble, soporte móvil con doble tarjeta SIM</li>
-    <li>Cámara frontal: 24,0 mp + 48,0 mp</li>
-    <li>Red de soporte; 2g: GPS 850/ 900/ 1800/1900 mhz; 3G: WCDMA 850/2100 mhz; LTE; 4g; 5G</li>
-    <li>Gps: sí, a - GPS</li>
-    <li>Bluetooth: sí</li>
-    <li>Batería: batería de iones de litio 8000 mah</li>
-    <li>Fuente de alimentación: entrada del SIM 100 - 240 v, 50/60 Hz, salida 5v - 2a</li>
-    <li>Soporte de software: Office</li>
-    <li>Soporte MS Office word, ppt, microsoft, multimedia</li>
-    <li>Vídeo: avi, mp4, flv, 3gp, mkv, wmv, etc. D.</li>
-    <li>Audio: mp3, wma, wav, ape, flac, aac, ogg, etc. D.</li>
-    <li>Fuente de la imagen: JPG/BMP/PNG/GIF.</li>
-    <li>Libros electrónicos: pdf, txt, etc. D.</li>
-    <li>1 cable USB</li>
-    <li>1 cargador</li>
+   
 </ul>
 
 						</p>
@@ -97,7 +77,9 @@
 						<i class="fa-solid fa-chevron-down"></i>
 					</div>
 					<div class="text-additional-information hidden">
-                    Descripción
+
+
+
 					</div>
 				</div>
 
@@ -110,10 +92,6 @@
 						<p>
                        
 <ul>
-
-<li>Memoria RAM: 12 GB</li>
-<li>Tamaño de la pantalla: 10 pulgadas</li>
-<li>Capacidad: 512 GB</li>
 
 </ul>
 
