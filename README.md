@@ -10,7 +10,7 @@
 ## Autores
 - Brayan Andres Hernandez Colon.  
 - Julian David Rojas Saavedra.
-- Jesus Layonel Cabezas Ordoñez.
+- Jesús Layonel Cabezas Ordoñez.
 - Esteban Salcedo Perez.
 
 
