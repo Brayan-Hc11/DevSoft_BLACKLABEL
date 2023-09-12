@@ -108,7 +108,7 @@ CREATE TABLE `usuarios` (
   `documento` varchar(30) NOT NULL COMMENT 'Aquí se almacenará el documento del usuario.',
   `nombre_usuario` tinytext NOT NULL COMMENT '	Aquí se almacenará el nombre del usuario.',
   `apellido_usuario` tinytext NOT NULL COMMENT '	Aquí se almacenará el apellido del usuario.',
-  `contraseña` varchar(20) NOT NULL COMMENT 'Aquí se almacenará la contraseña del usuario.',
+  `contraseña` varchar(500) NOT NULL COMMENT 'Aquí se almacenará la contraseña del usuario.',
   `correo` varchar(30) NOT NULL COMMENT '	Aquí se almacenará el correo electrónico del usuario.',
   `id_estado` int(10) NOT NULL COMMENT 'Aquí se almacenará el estado del usuario(activo o inactivo).'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
