@@ -2,13 +2,20 @@
     <link rel="stylesheet" href="main.css">
 
 <?php
+
 #inicialiamos una clase y un metodo
+
  Class Inicio {
+
     public function vistaInicio(){
+
+
         #Incluimos la capa del header 
     include("Cpa_ini-header.php");
 #Inicio de la capa media
+
 echo("
+
 <section class='informacion'>
     <div class='informacion__content container'>
 

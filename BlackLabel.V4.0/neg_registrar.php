@@ -30,12 +30,17 @@ class usuario {
         if ($cont == "0"){//si no se ha registrado hace 2 insert(1 a la tabla usuarios con los datos ingresados) y (otro a la tabla permisos con el documento y el 2 de usuario)
             mysqli_query($db,"INSERT INTO usuarios (id_usuario, documento, nombre_usuario, apellido_usuario, contraseña, correo, id_estado) VALUES ('$iid', '$documento','$nombre_usuario','$apellido_usuario','$password','$correo','1')") or die(mysqli_error($db)); 
             mysqli_query($db,"INSERT INTO permisos (id, documento, id_rol) VALUES ('NULL', '$documento','2')");
-            echo "<p> Usted ha sido registrado correctamente </p> ";
+
+            echo "<script>alert(' Usted ha sido registrado correctamente');</script>";
+
             $_SESSION["documento"] = $documento;//activo la sesion con el documento
             header ("Location: vista_permisos.php");//mando al usuario a la vista de permisos
         }else {
-            echo 'Usted ya ha sido registrado anteriormente';//no deja registrar si ya se ha registrado
+
+            echo "<script>alert(' Usted ya ha sido registrado anteriormente');</script>";//no deja registrar si ya se ha registrado
+
             $_SESSION["documento"] = $documento;//activo la sesion con el documento
+
             header ("Location: for_login.php");//mando al usuario a login
         }
     }
