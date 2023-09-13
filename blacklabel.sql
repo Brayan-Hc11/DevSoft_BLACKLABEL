@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-08-2023 a las 23:30:30
--- Versión del servidor: 10.1.38-MariaDB
--- Versión de PHP: 7.3.2
+-- Tiempo de generación: 13-09-2023 a las 13:49:48
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -34,7 +33,7 @@ CREATE TABLE `carrito` (
   `precio_producto` double NOT NULL COMMENT 'Aquí se alojara el precio del producto.	',
   `cantidad_producto` int(30) NOT NULL COMMENT 'podremos visualizar la cantidad de productos que se compraron.',
   `total_producto` int(30) NOT NULL COMMENT 'Aquí se guardaran el total de los productos seleccionados.'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -45,7 +44,7 @@ CREATE TABLE `carrito` (
 CREATE TABLE `categorias` (
   `id_categoria` int(10) NOT NULL COMMENT 'Aquí se almacenara el identificador de la categoría.',
   `categoria` tinytext NOT NULL COMMENT 'Aquí se guarda el nombre de la categoría.'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -56,7 +55,15 @@ CREATE TABLE `categorias` (
 CREATE TABLE `estados` (
   `id_estado` int(10) NOT NULL COMMENT 'Aquí se alojará el identificador del estado.',
   `estado` tinytext NOT NULL COMMENT 'Aquí se almacenará la palabra activo o inactivo'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `estados`
+--
+
+INSERT INTO `estados` (`id_estado`, `estado`) VALUES
+(1, 'activo'),
+(2, 'inactivo');
 
 -- --------------------------------------------------------
 
@@ -68,7 +75,7 @@ CREATE TABLE `permisos` (
   `id` int(10) NOT NULL COMMENT 'Aquí se alojara el identificador del permiso.',
   `documento` varchar(30) NOT NULL COMMENT '	Aquí se alojara en numero del documento de quien posee el permiso.',
   `id_rol` int(10) DEFAULT NULL COMMENT '	Aquí se alojara el identificador numérico del permiso.'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -84,7 +91,7 @@ CREATE TABLE `productos` (
   `documento_creador` varchar(30) NOT NULL COMMENT 'Aquí se alojara en documento del creador del producto.	',
   `precio_producto` double NOT NULL COMMENT 'Aquí se guardara el precio del prodcuto seleccionado.',
   `id_estado` int(10) NOT NULL COMMENT '	Aqui se almacenara el estado del producto'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -95,7 +102,15 @@ CREATE TABLE `productos` (
 CREATE TABLE `roles` (
   `id_rol` int(10) NOT NULL COMMENT 'Aquí se almacena el identificador del rol.',
   `rol` tinytext NOT NULL COMMENT 'Aquí se almacena el nombre de cada rol.'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `roles`
+--
+
+INSERT INTO `roles` (`id_rol`, `rol`) VALUES
+(1, 'administrador'),
+(2, 'usuario');
 
 -- --------------------------------------------------------
 
@@ -111,7 +126,7 @@ CREATE TABLE `usuarios` (
   `contraseña` varchar(500) NOT NULL COMMENT 'Aquí se almacenará la contraseña del usuario.',
   `correo` varchar(30) NOT NULL COMMENT '	Aquí se almacenará el correo electrónico del usuario.',
   `id_estado` int(10) NOT NULL COMMENT 'Aquí se almacenará el estado del usuario(activo o inactivo).'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Índices para tablas volcadas
@@ -180,19 +195,19 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT de la tabla `estados`
 --
 ALTER TABLE `estados`
-  MODIFY `id_estado` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Aquí se alojará el identificador del estado.';
+  MODIFY `id_estado` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Aquí se alojará el identificador del estado.', AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `permisos`
 --
 ALTER TABLE `permisos`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Aquí se alojara el identificador del permiso.';
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Aquí se alojara el identificador del permiso.', AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id_rol` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Aquí se almacena el identificador del rol.';
+  MODIFY `id_rol` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Aquí se almacena el identificador del rol.', AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas
