@@ -86,7 +86,7 @@ CREATE TABLE `permisos` (
 CREATE TABLE `productos` (
   `id_producto` int(10) NOT NULL COMMENT '	Aquí de alojara el codigo con el orden en el que ingrese el producto',
   `codigo_producto` varchar(30) NOT NULL COMMENT 'Aqui se alojara el un identificador alfanumerico del producto que ingrese',
-  `nombre_producto` varchar(30) NOT NULL COMMENT '	Aquí se alojara el nombre de los productos.',
+  `nombre_producto` varchar(30) NOT NULL COMMENT ' Aquí se alojara el nombre de los productos.',
   `id_categoria` int(10) NOT NULL COMMENT '	Aquí se alojara el identificador numerico de la categoria',
   `documento_creador` varchar(30) NOT NULL COMMENT 'Aquí se alojara en documento del creador del producto.	',
   `precio_producto` double NOT NULL COMMENT 'Aquí se guardara el precio del prodcuto seleccionado.',
