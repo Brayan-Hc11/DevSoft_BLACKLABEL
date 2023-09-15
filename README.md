@@ -37,6 +37,7 @@ Nuestra misión es crear, desarrollar y diseñar softwares, para las microempres
 ## Visión 
 Nuestra visión es al año 2025, consolidarnos como una empresa reconocida a nivel local. Centrándonos principalmente en el cliente y sus necesidades. 
 
+
 ## Objetivo general de la empresa  
 Nuestro objetivo general como empresa es generar y desarrollar software con altos estándares de calidad para las microempresas solicitantes de nuestros servicios.
 
