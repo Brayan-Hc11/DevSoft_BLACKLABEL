@@ -41,6 +41,7 @@ Nuestra visión es al año 2025, consolidarnos como una empresa reconocida a niv
 ## Objetivo general de la empresa  
 Nuestro objetivo general como empresa es generar y desarrollar software con altos estándares de calidad para las microempresas solicitantes de nuestros servicios.
 
+
 ## Objetivos específicos de le empresa  
 - Conocer la importancia presente de los softwares ante las microempresas.
 - Ser capaz de identificar cuando es necesario un software y cuando no.
