@@ -29,6 +29,7 @@
 ## Lugar 
 - Colombia/Bogotá D.C.
 
+
 ## Misión 
 Nuestra misión es crear, desarrollar y diseñar softwares, para las microempresas que soliciten nuestros servicios. 
 
