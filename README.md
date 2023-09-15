@@ -33,6 +33,7 @@
 ## Misión 
 Nuestra misión es crear, desarrollar y diseñar softwares, para las microempresas que soliciten nuestros servicios. 
 
+
 ## Visión 
 Nuestra visión es al año 2025, consolidarnos como una empresa reconocida a nivel local. Centrándonos principalmente en el cliente y sus necesidades. 
 
