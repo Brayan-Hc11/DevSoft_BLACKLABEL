@@ -37,7 +37,7 @@
 
     $final = new usuario();
     $final->ver();
-    
+
 ?>
 
             
@@ -190,15 +190,16 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="overview-wrap">
-                                                    <h2 class="title-1">overview</h2>
+                                                    <h2 class="title-1">Vista general</h2>
                                                     <button class="au-btn au-btn-icon au-btn--blue">
-                                                        <i class="zmdi zmdi-plus"></i>add item</button>
+                                                        <i class="zmdi zmdi-plus"></i>Agragar producto</button>
                                                 </div>
                                             </div>
                                         </div>
+                                        <br><br>
                                         <div class="row">
                                             <div class="col-lg-9">
-                                                <h2 class="title-1 m-b-25">Earnings By Items</h2>
+                                                <h2 class="title-1 m-b-25">Productos</h2>
                                                 <div class="table-responsive table--no-card m-b-40">
                                                     <table class="table table-borderless table-striped table-earning">
                                                         <thead>
@@ -281,7 +282,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-3">
-                                                <h2 class="title-1 m-b-25">Top countries</h2>
+                                                <h2 class="title-1 m-b-25">Top ventas</h2>
                                                 <div class="au-card au-card--bg-blue au-card-top-countries m-b-40">
                                                     <div class="au-card-inner">
                                                         <div class="table-responsive">
