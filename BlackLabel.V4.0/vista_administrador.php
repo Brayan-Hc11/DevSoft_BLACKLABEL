@@ -192,7 +192,7 @@
                                                 <div class="overview-wrap">
                                                     <h2 class="title-1">Vista general</h2>
                                                     <button class="au-btn au-btn-icon au-btn--blue">
-                                                        <i class="zmdi zmdi-plus"></i>Agragar producto</button>
+                                                        <i class="zmdi zmdi-plus"></i>Agregar producto</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -330,7 +330,7 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="copyright">
-                                                    <p>Copyright © 2023 DevSoft. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                                                    <p>Copyright © 2023 DevSoft. All rights reserved.</p>
                                                 </div>
                                             </div>
                                         </div>
