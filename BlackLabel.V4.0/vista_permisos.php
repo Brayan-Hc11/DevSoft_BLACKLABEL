@@ -37,6 +37,9 @@ class usuario{
 
 
         }
+
+        echo "<br/><br/><br/>";
+        echo "<br/><a href= 'salir.php'>Cerrar sesion <a/><br/>";
     }
 }
 
