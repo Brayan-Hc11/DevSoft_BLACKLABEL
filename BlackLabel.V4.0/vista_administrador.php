@@ -7,9 +7,40 @@
 
         {
             include("seguridad_administrador.php");
-            session_start();
 
-            echo ' 
+            include ("conexion.php");
+
+            $nnombre_usuario="";//inicializo las variables
+
+            $ccorreo="";//inicializo las variables
+
+            //consulta 
+            $sql = "SELECT * FROM usuarios WHERE documento ='$ddocumento'";
+            if (!$result = $db->query($sql))
+            {
+                die ('Hay un error en la consulta o los datos no se han podido encontrar [' . $db->error .  ']');
+            }
+
+            while ($row = $result->fetch_assoc())
+            {
+                $nnombre_usuario=stripslashes($row["nombre_usuario"]);
+                $ccorreo=stripslashes($row["correo"]);
+                $_SESSION["nnombre_usuario"]=$nnombre_usuario;
+                $_SESSION["ccorreo"]=$ccorreo;
+                
+            }//fin de la consulta
+
+            //echo "<center><p>Esta logueado $nnombre_usuario -- $ccorreo</p></center>";
+
+        }
+    }
+
+    $final = new usuario();
+    $final->ver();
+    
+?>
+
+            
 
                 <!DOCTYPE html>
                 <html lang="en">
@@ -118,23 +149,24 @@
                                                 <div class="account-wrap">
                                                     <div class="account-item clearfix js-item-menu">
                                                         <div class="image">
-                                                            <img src="images/img_usuario.png" alt="John Doe" />
+                                                            <img src="images/img_usuario.png"  />
                                                         </div>
                                                         <div class="content">
-                                                            <a class="js-acc-btn" href="#">john doe</a>
+                                                            <a class="js-acc-btn" href="#">
+                                                            <?php echo $_SESSION["nnombre_usuario"]; ?></a>
                                                         </div>
                                                         <div class="account-dropdown js-dropdown">
                                                             <div class="info clearfix">
                                                                 <div class="image">
                                                                     <a href="#">
-                                                                        <img src="images/img_usuario.png" alt="John Doe" />
+                                                                        <img src="images/img_usuario.png"  />
                                                                     </a>
                                                                 </div>
                                                                 <div class="content">
                                                                     <h5 class="name">
-                                                                        <a href="#">john doe</a>
+                                                                        <a href="#"><?php echo $_SESSION["nnombre_usuario"]; ?></a>
                                                                     </h5>
-                                                                    <span class="email">johndoe@example.com</span>
+                                                                    <span class="email"><?php echo $_SESSION["ccorreo"]; ?></span>
                                                                 </div>
                                                             </div>
                                                             <div class="account-dropdown__footer">
@@ -297,7 +329,7 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="copyright">
-                                                    <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                                                    <p>Copyright © 2023 DevSoft. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -328,11 +360,6 @@
 
                 </html>
                 <!-- end document-->
-            ';
-        }
-    }
+            
 
-    $final = new usuario();
-    $final->ver();
-?>
 
