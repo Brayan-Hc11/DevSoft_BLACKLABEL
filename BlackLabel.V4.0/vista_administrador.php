@@ -14,6 +14,8 @@
 
             $ccorreo="";//inicializo las variables
 
+            $ddocumento = $_SESSION["documento"];
+
             //consulta 
             $sql = "SELECT * FROM usuarios WHERE documento ='$ddocumento'";
             if (!$result = $db->query($sql))
