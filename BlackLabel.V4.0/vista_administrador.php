@@ -14,7 +14,7 @@
 
             $ccorreo="";//inicializo las variables
 
-            $ddocumento = $_SESSION["documento"];//sesion del documento, donde se guarda en la variable 
+            $ddocumento = $_SESSION["documento"];//sesion del documento, donde se guarda en la variable "ddocumento"
 
             //consulta 
             $sql = "SELECT * FROM usuarios WHERE documento ='$ddocumento'";
