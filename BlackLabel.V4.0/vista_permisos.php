@@ -1,6 +1,8 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 <?php
 
-    session_start();
+session_start();
 
 class usuario{
 
@@ -22,6 +24,7 @@ class usuario{
             if ($rrol == "1"){
 
                 echo "<a href= 'vista_administrador.php'>vista administrador <a/><br/>";
+                echo '<a href= "vista_administrador.php"> <span class="material-symbols-outlined"> manage_accounts </span> <a/>';//span administrador
 
                 $_SESSION["admin"] = "1";
 
@@ -31,6 +34,7 @@ class usuario{
             if ($rrol == "2"){
 
                 echo "<br/><a href= 'vista_usuario.php'>vista usuario <a/><br/>";
+                echo '<a href= "vista_usuario.php"> <span class="material-symbols-outlined"> person </span> <a/> <br/>';//span usuario
 
                 $_SESSION["usuario"] = "1";
             }
