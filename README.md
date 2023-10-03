@@ -26,7 +26,7 @@
 
 
 ## Periodo
-- Trimestre III.
+- Trimestre IV.
 
 
 ## Lugar 
