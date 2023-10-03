@@ -25,7 +25,7 @@ class usuario{
 
                 //echo "<a href= 'vista_administrador.php'>vista administrador <a/><br/>";
 
-                echo '<a href= "vista_administrador.php"> <span class="material-symbols-outlined"> manage_accounts </span> <a/>';//span administrador
+                echo '<a href= "vista_administrador.php"> <span class="material-symbols-outlined"> manage_accounts </span> Administrador <a/>';//span administrador
 
                 $_SESSION["admin"] = "1";
 
@@ -36,7 +36,7 @@ class usuario{
 
                 //echo "<br/><a href= 'vista_usuario.php'>vista usuario <a/><br/>";
 
-                echo '<a href= "vista_usuario.php"> <span class="material-symbols-outlined"> person </span> <a/> <br/>';//span usuario
+                echo '<a href= "vista_usuario.php"> <span class="material-symbols-outlined"> person </span> Usuario <a/> <br/>';//span usuario
 
                 $_SESSION["usuario"] = "1";
             }
@@ -46,7 +46,7 @@ class usuario{
 
         echo "<br/><br/><br/>";
 
-        echo '<a href= "salir.php"> <span class="material-symbols-outlined"> logout </span> <a/>';// span cerrar sesion
+        echo '<a href= "salir.php"> <span class="material-symbols-outlined"> logout </span> Cerrar sesion<a/>';// span cerrar sesion
     }
 }
 
