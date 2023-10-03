@@ -1,4 +1,23 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<style>
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.div-administrador {
+
+    align-items: center;
+    box-shadow: linear-gradient(rgba(0, 0, 0, 0.5019607843), rgba(0, 0, 0, 0.5019607843));
+    border:5px solid #888;
+    width: 150px;
+
+}
+
+
+
+</style>
 
 <?php
 
@@ -25,18 +44,20 @@ class usuario{
 
                 //echo "<a href= 'vista_administrador.php'>vista administrador <a/><br/>";
 
+                echo '<div class="div-administrador">';
                 echo '<a href= "vista_administrador.php"> <span class="material-symbols-outlined"> manage_accounts </span> Administrador <a/>';//span administrador
+                echo '</div> ';
 
                 $_SESSION["admin"] = "1";
-
-                
             }
     
             if ($rrol == "2"){
 
                 //echo "<br/><a href= 'vista_usuario.php'>vista usuario <a/><br/>";
 
+                echo '<div name="div-usuario">';
                 echo '<a href= "vista_usuario.php"> <span class="material-symbols-outlined"> person </span> Usuario <a/> <br/>';//span usuario
+                echo '</div> ';
 
                 $_SESSION["usuario"] = "1";
             }
