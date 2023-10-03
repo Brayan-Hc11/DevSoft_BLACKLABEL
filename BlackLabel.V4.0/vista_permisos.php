@@ -23,7 +23,8 @@ class usuario{
             
             if ($rrol == "1"){
 
-                echo "<a href= 'vista_administrador.php'>vista administrador <a/><br/>";
+                //echo "<a href= 'vista_administrador.php'>vista administrador <a/><br/>";
+
                 echo '<a href= "vista_administrador.php"> <span class="material-symbols-outlined"> manage_accounts </span> <a/>';//span administrador
 
                 $_SESSION["admin"] = "1";
@@ -33,7 +34,8 @@ class usuario{
     
             if ($rrol == "2"){
 
-                echo "<br/><a href= 'vista_usuario.php'>vista usuario <a/><br/>";
+                //echo "<br/><a href= 'vista_usuario.php'>vista usuario <a/><br/>";
+
                 echo '<a href= "vista_usuario.php"> <span class="material-symbols-outlined"> person </span> <a/> <br/>';//span usuario
 
                 $_SESSION["usuario"] = "1";
@@ -43,7 +45,8 @@ class usuario{
         }
 
         echo "<br/><br/><br/>";
-        echo "<br/><a href= 'salir.php'>Cerrar sesion <a/><br/>";
+
+        echo '<a href= "salir.php"> <span class="material-symbols-outlined"> logout </span> <a/>';// span cerrar sesion
     }
 }
 
