@@ -4,8 +4,9 @@
 <style>
 body{
 
-    background-image: url(img_fondo_blacklabel-min.jpg);
-    background-position: center bottom;
+    background-image: url("");
+    background-image: cover ;
+    background-position: center;
     background-repeat: no-repeat;
 
 }
@@ -44,7 +45,7 @@ div:before, div:after {
   height: 100%;
   top: 0;
   left: -50%;
-  background-color: #4741d7; /* color de fondo hover */
+  background-color: #ECECEC; /* color de fondo hover */
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -122,7 +123,7 @@ div:hover:after {
 }
 
 .section-cerrar-sesion:hover{
-   background-color: #3F51B5;
+   background-color: #ECECEC;
 }
 
 
@@ -184,6 +185,7 @@ class usuario{
         echo '<section class="section-cerrar-sesion">';
         echo '<a href= "salir.php"> <span class="material-symbols-outlined"> logout </span> Cerrar sesion<a/>';// span cerrar sesion
         echo '</section>';
+
 
 
 
