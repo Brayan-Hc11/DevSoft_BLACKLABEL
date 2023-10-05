@@ -1,5 +1,14 @@
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 <style>
+body{
+
+    background-image: url(img_fondo_blacklabel-min.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+}
 
 
 .title{
