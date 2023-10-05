@@ -18,10 +18,54 @@ a{
 div{
 
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: #F1F1F1;
+    /*background-color: #F1F1F1;*/
     width: 150px;
+    font: caption;
+    border-radius: 15px;
+    overflow: hidden;
 
 }
+
+div:before, div:after {
+
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -50%;
+  background-color: #4741d7; /* color de fondo hover */
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+}
+
+div:after {
+
+  left: 100%;
+
+}
+
+div:hover {
+
+  color: #fff; /* color de fuente hover */
+
+}
+
+div:hover:before {
+
+  left: 0;
+
+}
+
+div:hover:after {
+    
+  left: 50%;
+}
+
+
 
 
 .div-administrador{
@@ -31,6 +75,9 @@ div{
     padding: 25px;
     margin-bottom: 30px;
     margin-top: 30px;
+    position: relative;  
+    top: 20%;      
+    left: 45%;
 
 }
 
@@ -41,8 +88,34 @@ div{
     padding: 25px;
     margin-bottom: 30px;
     margin-top: 30px;
+    position: relative;  
+    top: 10%;      
+    left: 45%;
 
 }
+
+.section-cerrar-sesion{
+
+    align-items:center;
+    text-align:center;
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: absolute;  
+    top: 0%;      
+    left: 90%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 125px;
+    font: caption;
+    border-radius: 15px;
+    transition: background-color 1s linear;
+
+}
+
+.section-cerrar-sesion:hover{
+   background-color: #3F51B5;
+}
+
 
 
 
@@ -99,9 +172,12 @@ class usuario{
 
         echo "<br/><br/><br/>";
 
-        
-
+        echo '<section class="section-cerrar-sesion">';
         echo '<a href= "salir.php"> <span class="material-symbols-outlined"> logout </span> Cerrar sesion<a/>';// span cerrar sesion
+        echo '</section>';
+
+
+
     }
 }
 
