@@ -16,7 +16,7 @@
 
             $ddocumento = $_SESSION["documento"];//sesion del documento, donde se guarda en la variable "ddocumento"
 
-            //consulta 
+            //consulta a la tabla usuario
             $sql = "SELECT * FROM usuarios WHERE documento ='$ddocumento'";
             if (!$result = $db->query($sql))
             {
@@ -31,6 +31,38 @@
                 $_SESSION["ccorreo"]=$ccorreo;
                 
             }//fin de la consulta
+
+
+            //consulta a la tabla productos
+
+            $sql1 = "SELECT * FROM productos";
+            if (!$result1 = $db->query($sql1))
+            {
+                die ('Hay un error en la consulta o los datos no se han podido encontrar [' . $db->error .  ']');
+            }
+
+            while ($row1 = $result1->fetch_assoc())
+
+            {
+                
+                $iid_producto=stripslashes($row1["id_producto"]);
+                $ccodigo_producto=stripslashes($row1["codigo_producto"]);
+                $nnombre_producto=stripslashes($row1["nombre_producto"]);
+                $iid_categoria=stripslashes($row1["id_categoria"]);
+                $ddocumento_creador=stripslashes($row1["documento_creador"]);
+                $pprecio_producto=stripslashes($row1["precio_producto"]);
+                $iid_estado=stripslashes($row1["id_estado"]);
+
+                $_SESSION["iid_producto"]=$iid_producto;
+                $_SESSION["ccodigo_producto"]=$ccodigo_producto;
+                $_SESSION["nnombre_producto"]=$nnombre_producto;
+                $_SESSION["iid_categoria"]=$iid_categoria;
+                $_SESSION["ddocumento_creador"]=$ddocumento_creador;
+                $_SESSION["pprecio_producto"]=$pprecio_producto;
+                $_SESSION["iid_estado"]=$iid_estado;
+                
+            }
+
 
             //echo "<center><p>Esta logueado $nnombre_usuario -- $ccorreo</p></center>";
 
@@ -206,79 +238,30 @@
                                                     <table class="table table-borderless table-striped table-earning">
                                                         <thead>
                                                             <tr>
-                                                                <th>date</th>
-                                                                <th>order ID</th>
-                                                                <th>name</th>
-                                                                <th class="text-right">price</th>
-                                                                <th class="text-right">quantity</th>
-                                                                <th class="text-right">total</th>
+                                                                <th>Id producto</th>
+                                                                <th>Codigo producto </th>
+                                                                <th>Nombre</th>
+                                                                <th class="text-right">Id categoria</th>
+                                                                <th class="text-right">Documento Creador</th>
+                                                                <th class="text-right">Precio Producto</th>
+                                                                <th class="text-right">Id Estado</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr>
-                                                                <td>2018-09-29 05:57</td>
-                                                                <td>100398</td>
-                                                                <td>iPhone X 64Gb Grey</td>
-                                                                <td class="text-right">$999.00</td>
-                                                                <td class="text-right">1</td>
-                                                                <td class="text-right">$999.00</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2018-09-28 01:22</td>
-                                                                <td>100397</td>
-                                                                <td>Samsung S8 Black</td>
-                                                                <td class="text-right">$756.00</td>
-                                                                <td class="text-right">1</td>
-                                                                <td class="text-right">$756.00</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2018-09-27 02:12</td>
-                                                                <td>100396</td>
-                                                                <td>Game Console Controller</td>
-                                                                <td class="text-right">$22.00</td>
-                                                                <td class="text-right">2</td>
-                                                                <td class="text-right">$44.00</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2018-09-26 23:06</td>
-                                                                <td>100395</td>
-                                                                <td>iPhone X 256Gb Black</td>
-                                                                <td class="text-right">$1199.00</td>
-                                                                <td class="text-right">1</td>
-                                                                <td class="text-right">$1199.00</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2018-09-25 19:03</td>
-                                                                <td>100393</td>
-                                                                <td>USB 3.0 Cable</td>
-                                                                <td class="text-right">$10.00</td>
-                                                                <td class="text-right">3</td>
-                                                                <td class="text-right">$30.00</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2018-09-29 05:57</td>
-                                                                <td>100392</td>
-                                                                <td>Smartwatch 4.0 LTE Wifi</td>
-                                                                <td class="text-right">$199.00</td>
-                                                                <td class="text-right">6</td>
-                                                                <td class="text-right">$1494.00</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2018-09-24 19:10</td>
-                                                                <td>100391</td>
-                                                                <td>Camera C430W 4k</td>
-                                                                <td class="text-right">$699.00</td>
-                                                                <td class="text-right">1</td>
-                                                                <td class="text-right">$699.00</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2018-09-22 00:43</td>
-                                                                <td>100393</td>
-                                                                <td>USB 3.0 Cable</td>
-                                                                <td class="text-right">$10.00</td>
-                                                                <td class="text-right">3</td>
-                                                                <td class="text-right">$30.00</td>
-                                                            </tr>
+                                                        <?php
+                                                        /*
+
+                                                                echo '<tr>
+                                                                <td>'; $_SESSION["iid_producto"]; echo'</td> 
+                                                                <td>'; $_SESSION["ccodigo_producto"]; echo'</td> 
+                                                                <td>'; $_SESSION["nnombre_producto"]; echo' </td> 
+                                                                <td>'; $_SESSION["iid_categoria"]; echo'</td>
+                                                                <td>'; $_SESSION["ddocumento_creador"]; echo'</td> 
+                                                                <td>'; $_SESSION["pprecio_producto"]; echo'</td> 
+                                                                <td>'; $_SESSION["iid_estado"]; echo'</td>
+                                                                </tr>';*/
+                                                                
+                                                        ?>
                                                         </tbody>
                                                     </table>
                                                 </div>
