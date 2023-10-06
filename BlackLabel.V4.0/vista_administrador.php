@@ -10,9 +10,9 @@
 
             include ("conexion.php");
 
-            $nnombre_usuario="";//inicializo las variables
+            $nnombre_usuario="";//inicializo las variables de usuario
 
-            $ccorreo="";//inicializo las variables
+            $ccorreo="";//inicializo las variables de usuario
 
             $ddocumento = $_SESSION["documento"];//sesion del documento, donde se guarda en la variable "ddocumento"
 
@@ -33,7 +33,15 @@
             }//fin de la consulta
 
 
-            //consulta a la tabla productos
+             //consulta a la tabla productos
+
+            $iid_producto=""; //inicializo las variables de los productos
+            $ccodigo_producto=""; //inicializo las variables de los productos
+            $nnombre_producto=""; //inicializo las variables de los productos
+            $iid_categoria=""; //inicializo las variables de los productos
+            $ddocumento_creador=""; //inicializo las variables de los productos
+            $pprecio_producto=""; //inicializo las variables de los productos
+            $iid_estado=""; //inicializo las variables de los productos
 
             $sql1 = "SELECT * FROM productos";
             if (!$result1 = $db->query($sql1))
@@ -249,17 +257,21 @@
                                                         </thead>
                                                         <tbody>
                                                         <?php
-                                                        /*
+                                                        
 
                                                                 echo '<tr>
-                                                                <td>'; $_SESSION["iid_producto"]; echo'</td> 
-                                                                <td>'; $_SESSION["ccodigo_producto"]; echo'</td> 
-                                                                <td>'; $_SESSION["nnombre_producto"]; echo' </td> 
-                                                                <td>'; $_SESSION["iid_categoria"]; echo'</td>
-                                                                <td>'; $_SESSION["ddocumento_creador"]; echo'</td> 
-                                                                <td>'; $_SESSION["pprecio_producto"]; echo'</td> 
-                                                                <td>'; $_SESSION["iid_estado"]; echo'</td>
-                                                                </tr>';*/
+                                                                <td>', $_SESSION["iid_producto"], '</td> 
+                                                                <td>', $_SESSION["ccodigo_producto"], '</td> 
+                                                                <td>', $_SESSION["nnombre_producto"], '</td> 
+                                                                <td>', $_SESSION["iid_categoria"], '</td>
+                                                                <td>', $_SESSION["ddocumento_creador"], '</td> 
+                                                                <td>', $_SESSION["pprecio_producto"], '</td> 
+                                                                <td>', $_SESSION["iid_estado"], '</td>
+                                                                </tr>';
+
+                                                                //echo $_SESSION["iid_producto"], "id del producto" ;
+
+                                                               /* echo" <tr> <td>", $_SESSION["iid_producto"], "</td> </tr>";*/ // imprimir las variables globales de los productos
                                                                 
                                                         ?>
                                                         </tbody>
