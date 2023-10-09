@@ -45,6 +45,9 @@ body {
     .Principal{
         padding-bottom: 10rem;
     }
+    .blanco {
+        color:white;
+    }
 
 /*ESTILOS DEL HEADER DE LA PAGINA PRIMARIA*/
 .header {
@@ -552,11 +555,16 @@ bottom: -1rem;
 left: 50%;
 transform: translate(-50%, 50%);
 }
-.card-category span {
+.card-category span  {
 font-size: 1.9rem;
 color: hsl(0, 0%, 100%);
 cursor: pointer;
 }
+.card-category .blanco a  {
+    font-size: 1.9rem;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+ }
 .card-category span:hover {
 color: hsl(201, 88%, 25%);
 border-bottom: 3px solid hsl(201, 88%, 25%);
