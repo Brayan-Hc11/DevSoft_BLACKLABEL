@@ -5,7 +5,7 @@
 
         public function ver()
 
-        { 
+        {
             include("seguridad_administrador.php");
 
             include ("conexion.php");
