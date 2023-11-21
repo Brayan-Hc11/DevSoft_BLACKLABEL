@@ -14,7 +14,7 @@
 - Brayan Andres Hernandez Colon.  
 - Julian David Rojas Saavedra.  
 - Jesús Layonel Cabezas Ordoñez.  
-- Esteban Salcedo Perez. 
+- Esteban Salcedo Perez.  
 
 
 ## Instituto Formativo
