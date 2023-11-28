@@ -147,7 +147,7 @@ class usuario{
             if ($rrol == "2"){
                 //echo "<br/><a href= 'vista_usuario.php'>vista usuario <a/><br/>";
                 Echo(" 
-                <a class='Roles' href= 'USUARIO/Usuario__Productos.php'> 
+                <a class='Roles' href= 'vista_usuario.php'> 
                 <div class='card'>
                     <div class='content'>
                         <span class='fondo'></span>

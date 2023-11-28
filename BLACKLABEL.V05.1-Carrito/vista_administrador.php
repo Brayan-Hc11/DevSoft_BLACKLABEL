@@ -99,22 +99,22 @@
                     <title>Panel de control</title>
 
                     <!-- Fontfaces CSS-->
-                    <link href="css/font-face.css" rel="stylesheet" media="all">
-                    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
-                    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+                    <link href="del proyecto/css/font-face.css" rel="stylesheet" media="all">
+                    <link href="del proyecto/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+                    <link href="del proyecto/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
 
                     <!-- Bootstrap CSS-->
-                    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+                    <link href="del proyecto/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
 
                     <!-- Vendor CSS-->
-                    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
-                    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
-                    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
-                    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
-                    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+                    <link href="del proyecto/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+                    <link href="del proyecto/vendor/wow/animate.css" rel="stylesheet" media="all">
+                    <link href="del proyecto/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+                    <link href="del proyecto/vendor/slick/slick.css" rel="stylesheet" media="all">
+                    <link href="del proyecto/vendor/select2/select2.min.css" rel="stylesheet" media="all">
 
                     <!-- Main CSS-->
-                    <link href="css/theme.css" rel="stylesheet" media="all">
+                    <link href="del proyecto/css/theme.css" rel="stylesheet" media="all">
 
                 </head>
 
@@ -127,7 +127,7 @@
                                 <div class="container-fluid">
                                     <div class="header-mobile-inner">
                                         <a class="logo" href="for_login.php">
-                                            <img src="images/img_logo.png" alt="BlackLabel" width="70px"/>
+                                            <img src="del proyecto/images/img_logo.png" alt="BlackLabel" width="70px"/>
                                         </a>
                                         <button class="hamburger hamburger--slider" type="button">
                                             <span class="hamburger-box">
@@ -158,7 +158,7 @@
                         <aside class="menu-sidebar d-none d-lg-block">
                             <div class="logo">
                                 <a href="for_login.php">
-                                    <img src="images/img_logo.png" alt="BlackLabel" width="70px"/>
+                                    <img src="del proyecto/images/img_logo.png" alt="BlackLabel" width="70px"/>
                                 </a>
                             </div>
                             <div class="menu-sidebar__content js-scrollbar1">
@@ -191,7 +191,7 @@
                                                 <div class="account-wrap">
                                                     <div class="account-item clearfix js-item-menu">
                                                         <div class="image">
-                                                            <img src="images/img_usuario.png"  />
+                                                            <img src="del proyecto/images/img_usuario.png"  />
                                                         </div>
                                                         <div class="content">
                                                             <a class="js-acc-btn" href="#">
@@ -201,7 +201,7 @@
                                                             <div class="info clearfix">
                                                                 <div class="image">
                                                                     <a href="#">
-                                                                        <img src="images/img_usuario.png"  />
+                                                                        <img src="del proyecto/images/img_usuario.png"  />
                                                                     </a>
                                                                 </div>
                                                                 <div class="content">
@@ -341,18 +341,18 @@
                     </div>
 
                     <!-- Jquery JS-->
-                    <script src="vendor/jquery-3.2.1.min.js"></script>
+                    <script src="del proyecto/vendor/jquery-3.2.1.min.js"></script>
                     <!-- Bootstrap JS-->
-                    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
-                    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+                    <script src="del proyecto/vendor/bootstrap-4.1/popper.min.js"></script>
+                    <script src="del proyecto/vendor/bootstrap-4.1/bootstrap.min.js"></script>
                     <!-- Vendor JS       -->
-                    <script src="vendor/slick/slick.min.js"></script>
-                    <script src="vendor/wow/wow.min.js"></script>
-                    <script src="vendor/animsition/animsition.min.js"></script>
-                    <script src="vendor/select2/select2.min.js"></script>
+                    <script src="del proyecto/vendor/slick/slick.min.js"></script>
+                    <script src="del proyecto/vendor/wow/wow.min.js"></script>
+                    <script src="del proyecto/vendor/animsition/animsition.min.js"></script>
+                    <script src="del proyecto/vendor/select2/select2.min.js"></script>
 
                     <!-- Main JS-->
-                    <script src="js/main.js"></script>
+                    <script src="del proyecto/js/main.js"></script>
 
                 </body>
 
