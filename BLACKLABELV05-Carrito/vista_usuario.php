@@ -59,6 +59,7 @@
                                 <th>Cantidad</th>
                             </tr>
                         </thead>
+                        <tbody></tbody>
                     </table>
                             <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
                 </div>
@@ -173,7 +174,7 @@ class inicioProd{
                     </div>
     
                 <h3><a href='PROD/Prod_Laptop1.php'>Portátil Asus X415EA</a></h3>
-                <span class='add-cart agregar-carrito' data-id='17'>
+                <span class='add-cart agregar-carrito' data-id='1'>
                         <i class='fa-solid fa-basket-shopping agregar-carrito'></i>
                     </span>
                         <p class='price'>$ 298.591<span></span></p>
@@ -195,7 +196,7 @@ class inicioProd{
                     </div>
     
                 <h3><a href='PROD/Prod_Monitores2.php'>Monitor gamer</a></h3>
-                <span class='add-cart agregar-carrito' data-id=''>
+                <span class='add-cart agregar-carrito' data-id='2'>
                     <i class='fa-solid fa-basket-shopping'></i>
                 </span>
                         <p class='price'>$ 583.178<span></span></p>
@@ -218,7 +219,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Smartphone1.php'>Xiaomi Redmi 9A</a></h3>
-        <span class='add-cart agregar-carrito' data-id='1'>
+        <span class='add-cart agregar-carrito' data-id='3'>
         <i class='fa-solid fa-basket-shopping'></i>
         </span>
                 <p class='price'>$ 389.000<span></span></p>
@@ -240,7 +241,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Laptop2.php'>Portátil Lenovo</a></h3>
-        <span class='add-cart agregar-carrito' data-id='18'>
+        <span class='add-cart agregar-carrito' data-id='4'>
         <i class='fa-solid fa-basket-shopping'></i>
         </span>
                 <p class='price'>$ 1.300.000<span></span></p>
@@ -262,7 +263,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Laptop5.php'>Portátil gamer Asus </a></h3>
-        <span class='add-cart agregar-carrito' data-id='21'>
+        <span class='add-cart agregar-carrito' data-id='5'>
         <i class='fa-solid fa-basket-shopping'></i>
     </span>
                 <p class='price'>$ 3.299.000 <span></span></p>
@@ -288,7 +289,7 @@ class inicioProd{
                     </div>
     
                 <h3><a href='PROD/Prod_Laptop6.php'>Laptop Hp 14</a></h3>
-                <span class='add-cart agregar-carrito' data-id='22'>
+                <span class='add-cart agregar-carrito' data-id='6'>
                 <i class='fa-solid fa-basket-shopping'></i>
             </span>
                         <p class='price'>$ 1.299.000<span></span></p>
@@ -332,7 +333,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Smartphone6.php'>Umidigi A11s Dual</a></h3>
-        <span class='add-cart agregar-carrito' data-id='6'>
+        <span class='add-cart agregar-carrito' data-id='8'>
         <i class='fa-solid fa-basket-shopping'></i>
     </span>
                 <p class='price'>$ 319.900<span></span></p>
@@ -354,7 +355,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Auriculares2.php'>Audífonos Logitech</a></h3>
-        <span class='add-cart agregar-carrito' data-id='1'>
+        <span class='add-cart agregar-carrito' data-id='9'>
         <i class='fa-solid fa-basket-shopping'></i>
     </span>
                 <p class='price'>
@@ -377,7 +378,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Tableta7.php'>Tableta Inteligente </a></h3>
-        <span class='add-cart agregar-carrito' data-id='15'>
+        <span class='add-cart agregar-carrito' data-id='10'>
         <i class='fa-solid fa-basket-shopping'></i>
     </span>
                 <p class='price'>$ 298.591 <span></span></p>
@@ -414,7 +415,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Ordenadores1.php'>Torre Cpu Gamer</a></h3>
-        <span class='add-cart agregar-carrito' data-id=''>
+        <span class='add-cart agregar-carrito' data-id='11'>
         <i class='fa-solid fa-basket-shopping'></i>
     </span>
                 <p class='price'>$ 1.282.500<span></span></p>
@@ -438,7 +439,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Ordenadores2.php'>Torre Cpu Gamer</a></h3>
-        <span class='add-cart agregar-carrito' data-id=''>
+        <span class='add-cart agregar-carrito' data-id='12'>
         <i class='fa-solid fa-basket-shopping'></i>
     </span>
                 <p class='price'>$ 1.949.900<span></span></p>
@@ -463,7 +464,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Auriculares5.php'>Audífonos JBL </a></h3>
-        <span class='add-cart agregar-carrito' data-id=''>
+        <span class='add-cart agregar-carrito' data-id='13'>
         <i class='fa-solid fa-basket-shopping'></i>
     </span>
                 <p class='price'>$ 185.900<span></span></p>
@@ -488,7 +489,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Laptop8.php'>Portátil Gamer Acer</a></h3>
-        <span class='add-cart agregar-carrito' data-id='24'>
+        <span class='add-cart agregar-carrito' data-id='14'>
         <i class='fa-solid fa-basket-shopping'></i>
     </span>
                 <p class='price'>$ 2.020.553<span></span></p>
@@ -512,7 +513,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Smartphone8.php'>iPhone 7 32 GB plata</a></h3>
-        <span class='add-cart agregar-carrito' data-id='8'>
+        <span class='add-cart agregar-carrito' data-id='15'>
         <i class='fa-solid fa-basket-shopping'></i>
     </span>
                 <p class='price'>$ 1.789.000<span></span></p>
@@ -536,7 +537,7 @@ class inicioProd{
                     </div>
     
                 <h3><a href='PROD/Prod_Ordenadores7.php'>Torre Cpu Intel Celeron</a></h3>
-                <span class='add-cart agregar-carrito' data-id=''>
+                <span class='add-cart agregar-carrito' data-id='16'>
                 <i class='fa-solid fa-basket-shopping'></i>
             </span>
                         <p class='price'>
@@ -559,7 +560,7 @@ class inicioProd{
                     </div>
     
                 <h3><a href='PROD/Prod_Smartphone4.php'>Smartphone Tecno Pop</a></h3>
-                <span class='add-cart agregar-carrito' data-id='4'>
+                <span class='add-cart agregar-carrito' data-id='17'>
                 <i class='fa-solid fa-basket-shopping'></i>
             </span>
                         <p class='price'>$ 315.499<span></span></p>
@@ -581,7 +582,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Auriculares6.php'>Udífonos in-ear gamer</a></h3>
-        <span class='add-cart agregar-carrito' data-id=''>
+        <span class='add-cart agregar-carrito' data-id='18'>
         <i class='fa-solid fa-basket-shopping'></i>
     </span>
                 <p class='price'>$ 76.282<span>$60.200</span></p>
@@ -603,7 +604,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Monitores8.php'>Monitor Gamer LG 27 Ultragear </a></h3>
-        <span class='add-cart agregar-carrito' data-id=''>
+        <span class='add-cart agregar-carrito' data-id='19'>
         <i class='fa-solid fa-basket-shopping'></i>
     </span>
                 <p class='price'>$ 1.117.719<span>$1.100.600</span></p>
@@ -625,7 +626,7 @@ class inicioProd{
             </div>
 
         <h3><a href='PROD/Prod_Auriculares7.php'>Udífonos in-ear gamer inalámbricos</a></h3>
-        <span class='add-cart agregar-carrito' data-id=''>
+        <span class='add-cart agregar-carrito' data-id='20'>
         <i class='fa-solid fa-basket-shopping'></i>
     </span>
                 <p class='price precio'>$ 76.282<span></span></p>
