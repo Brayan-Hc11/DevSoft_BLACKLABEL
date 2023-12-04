@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-09-2023 a las 13:49:48
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Tiempo de generación: 04-12-2023 a las 19:01:20
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -46,6 +46,18 @@ CREATE TABLE `categorias` (
   `categoria` tinytext NOT NULL COMMENT 'Aquí se guarda el nombre de la categoría.'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `categorias`
+--
+
+INSERT INTO `categorias` (`id_categoria`, `categoria`) VALUES
+(1, 'Smartphones'),
+(2, 'Tabletas'),
+(3, 'Laptops'),
+(4, 'Ordenadores'),
+(5, 'Auriculares'),
+(6, 'Monitores');
+
 -- --------------------------------------------------------
 
 --
@@ -77,6 +89,13 @@ CREATE TABLE `permisos` (
   `id_rol` int(10) DEFAULT NULL COMMENT '	Aquí se alojara el identificador numérico del permiso.'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `permisos`
+--
+
+INSERT INTO `permisos` (`id`, `documento`, `id_rol`) VALUES
+(2, '111', 2);
+
 -- --------------------------------------------------------
 
 --
@@ -92,6 +111,20 @@ CREATE TABLE `productos` (
   `precio_producto` double NOT NULL COMMENT 'Aquí se guardara el precio del prodcuto seleccionado.',
   `id_estado` int(10) NOT NULL COMMENT '	Aqui se almacenara el estado del producto'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `productos`
+--
+
+INSERT INTO `productos` (`id_producto`, `codigo_producto`, `nombre_producto`, `id_categoria`, `documento_creador`, `precio_producto`, `id_estado`) VALUES
+(1, 'A1', 'Xiaomi redmi 9A', 1, '111', 389, 1),
+(2, 'A2', 'Xiaomi 12', 1, '111', 1769900, 1),
+(3, 'A3', 'Umidigi A11 Pro Max', 1, '111', 419900, 1),
+(4, 'A4', 'Smartphone Tecno Pop', 1, '111', 315499, 1),
+(5, 'A5', 'Doogee S98', 1, '111', 2349990, 1),
+(6, 'A6', 'Umidigi A11s', 1, '111', 319900, 1),
+(7, 'A7', 'Xiaomi Redmi Note 10', 1, '111', 801900, 1),
+(8, 'A8', 'iPhone 7', 1, '111', 1789000, 1);
 
 -- --------------------------------------------------------
 
@@ -127,6 +160,13 @@ CREATE TABLE `usuarios` (
   `correo` varchar(30) NOT NULL COMMENT '	Aquí se almacenará el correo electrónico del usuario.',
   `id_estado` int(10) NOT NULL COMMENT 'Aquí se almacenará el estado del usuario(activo o inactivo).'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_usuario`, `documento`, `nombre_usuario`, `apellido_usuario`, `contraseña`, `correo`, `id_estado`) VALUES
+(0, '111', 'Draco', 'Perez', '$2y$10$Ud6jIqWQO7wyExoezoxpMeQ7hEcCRPgaCnP66.sbNkLmECog5pQdu', 'dp@gmail.com', 1);
 
 --
 -- Índices para tablas volcadas
@@ -189,7 +229,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `id_categoria` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Aquí se almacenara el identificador de la categoría.';
+  MODIFY `id_categoria` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Aquí se almacenara el identificador de la categoría.', AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `estados`
@@ -201,7 +241,7 @@ ALTER TABLE `estados`
 -- AUTO_INCREMENT de la tabla `permisos`
 --
 ALTER TABLE `permisos`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Aquí se alojara el identificador del permiso.', AUTO_INCREMENT=2;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Aquí se alojara el identificador del permiso.', AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `roles`
