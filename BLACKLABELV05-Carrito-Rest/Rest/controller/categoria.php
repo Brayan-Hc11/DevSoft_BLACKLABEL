@@ -16,7 +16,7 @@
 
         case "GetId":
             $datos=$producto->get_producto_x_id($body["id_producto"]);
-            echo json_encode("hola");
+            echo json_encode($datos);
         break;
 
         case "Insert":
