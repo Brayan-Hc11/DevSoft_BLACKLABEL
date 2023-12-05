@@ -1,6 +1,6 @@
 # Development Software Community B.J.J.E 
 
-<!-- -->
+<!-- const listaProductos = document.getElementsByName("lista-productos"); const listaProductos = document.querySelector('#lista-productos'); const listaProductos = document.querySelectorAll('#lista-productos');-->
 <!--![image](https://github.com/Brayan-Hc11/DevSoft_BlackLabel-per-/assets/118775234/976fef5f-6a98-490b-bc15-428265ae1347)-->
 
 
