@@ -34,7 +34,7 @@
 
 
 ## Misión 
-Nuestra misión es crear, desarrollar y diseñar softwares, para las microempresas que soliciten nuestros servicios. 
+Nuestra misión es crear, desarrollar y diseñar softwares, para las empresas y microempresas que soliciten nuestros servicios. 
 
 
 ## Visión 
