@@ -1,0 +1,124 @@
+  /* Links*/
+  a {
+    font-size: 1.5em;
+    color: #222;
+    }
+
+
+    .button:hover
+    {
+        box-shadow: 5px 5px 5px rgb(87, 87, 87);
+    }
+  
+  /* Buttons*/
+
+  .button, button
+  {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box; 
+    }
+  
+  /* Tables*/
+
+    table{
+      color: black;
+    }
+
+    th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1; 
+    }
+
+    th:first-child, td:first-child 
+    {
+    padding-left: 0; 
+    }
+    th:last-child, td:last-child 
+    {
+    padding-right: 0; 
+    }
+   
+  /* Utilities*/
+
+  .u-full-width 
+    {
+    width: 100%;
+    box-sizing: border-box; 
+
+    }
+
+  .u-max-full-width 
+    {
+    max-width: 100%;
+    box-sizing: border-box; 
+    }
+
+  .u-pull-right
+    {
+    float: right;
+    }
+
+  .u-pull-left 
+    {
+    float: left; 
+    }
+  
+
+  
+  /*carrito*/
+
+
+  
+  ul {
+    list-style: none;
+  }
+  
+  .submenu {
+    position: relative;
+  }
+  
+  .submenu #carrito{
+    display: none;
+  }
+  .submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+  
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+  }
+  .vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  #lista-cursos .row {
+    margin-bottom:20px;
+  }
+  /*.agregar-carrito {
+    margin:10px 0;
+  }*/
