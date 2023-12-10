@@ -1,6 +1,5 @@
     <!--Inplementamos la serguridad de seciones de usuario s-->
     <!--Definir una altura maxima para el carrio
-        El boton de compras no agrega cuando se le oprime a la canasta de compras
         Dejar el banner de anclado a la pantalla
         Las imagenes de los productos no redirigen a al pagina del producto-->
 <?php include ("seguridad_usuario.php");?>
