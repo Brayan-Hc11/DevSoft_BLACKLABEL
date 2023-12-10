@@ -24,9 +24,10 @@ function cargarEventListeners() {
 // Función para agregar un producto al carrito
 function agregarProducto(e) {
     e.preventDefault();
+    const botonAgregarCarrito = e.target.closest('.agregar-carrito');
 
-    if (e.target.classList.contains('agregar-carrito')) {
-        const productoSeleccionado = e.target.parentElement.parentElement;
+    if (botonAgregarCarrito) {
+        const productoSeleccionado = botonAgregarCarrito.closest('.card-product');
         leerDatosProducto(productoSeleccionado);
     }
 }
