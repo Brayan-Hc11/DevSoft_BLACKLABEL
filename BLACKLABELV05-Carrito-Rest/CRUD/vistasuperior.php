@@ -3,15 +3,27 @@ class usuario{
         public function ver(){
             include("seguridad_administrador.php"); include ("conexion.php");
 
+
             $nnombre_usuario="";//inicializo las variables de usuario
+
             $ccorreo="";//inicializo las variables de usuario
             $ddocumento = $_SESSION["documento"];//sesion del documento, donde se guarda en la variable "ddocumento"
 
             //consulta a la tabla usuario
             $sql = "SELECT * FROM usuarios WHERE documento ='$ddocumento'";
-            if (!$result = $db->query($sql)){
+            if (!$result = $db->query($sql))
+            {
                 die ('Hay un error en la consulta o los datos no se han podido encontrar [' . $db->error .  ']');
             }
+
+            while ($row = $result->fetch_assoc())
+            {
+                $nnombre_usuario=stripslashes($row["nombre_usuario"]);
+                $ccorreo=stripslashes($row["correo"]);
+                $_SESSION["nnombre_usuario"]=$nnombre_usuario;
+                $_SESSION["ccorreo"]=$ccorreo;
+                
+            }//fin de la consulta
         }
     }
     $final = new usuario();
