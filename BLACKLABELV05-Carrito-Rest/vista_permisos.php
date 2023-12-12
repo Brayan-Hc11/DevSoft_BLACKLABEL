@@ -139,22 +139,6 @@ class usuario{
                     </div>
                 </div>
                 </a>
-
-                <a class='Roles' href= 'vista_usuario.php'> 
-                <div class='card'>
-                    <div class='content'>
-                        <span class='fondo'></span>
-                        
-                        <div class='img'>
-                            <img src='IMG/img_IconoUsuarios.jpg'>
-                        </div>
-
-                        <h4>Rol</h4>
-                        <h6>Usuario</h6>
-                        <p>Puede ingresar como usuario de sistema.</p>         
-                    </div>
-                </div>
-                </a>
                 ");
 
                 $_SESSION["admin"] = "1";
