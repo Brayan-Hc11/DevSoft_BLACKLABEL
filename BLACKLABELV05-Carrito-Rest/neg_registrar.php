@@ -40,8 +40,7 @@ class usuario {
             echo "<script>alert(' Usted ya ha sido registrado anteriormente');</script>";//no deja registrar si ya se ha registrado
 
             $_SESSION["documento"] = $documento;//activo la sesion con el documento
-
-            header ("Location: for_login.php");//mando al usuario a login
+            header("refresh:0; url=for_login.php");//mando al usuario a login, despues de 0 cero segundo me envia a for login
         }
     }
 }

@@ -16,9 +16,10 @@ class usuario{
         if (password_verify($contrasena, $ccontraseña)){
             $cont = "1";
         }if ($cont == "0"){
-            echo "Usted no se encuentra registrado";
+            echo '<script>alert("Usted no se encuentra registrado");</script>'; 
+            header("refresh:0; url=for_login.php");//, despues de 0 cero segundo me envia a for login
         }else{
-            echo "Ha ingresado correctamente";
+            //echo "Ha ingresado correctamente";
             $_SESSION["documento"]=$ddocumento;
             header("Location: vista_permisos.php");
         }
