@@ -11,8 +11,8 @@
 
 *** 
 ## Autores
-- Brayan Andres Hernandez Colon.
-- Julian David Rojas Saavedra.
+- Brayan Andres Hernandez Colon. 
+- Julian David Rojas Saavedra. 
 - Jesús Layonel Cabezas Ordoñez.
 - Esteban Salcedo Perez.
 
