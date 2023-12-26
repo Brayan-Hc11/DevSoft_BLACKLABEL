@@ -9,7 +9,7 @@ include('conexion.php');
             <div class="row">
                 <div class="col-md-12">
                     <div class="overview-wrap">
-                        <h2 class="title-1">ELIMINAR USUARIOS</h2>
+                        <h2 class="title-1">ELIMINAR PRODUCTOS</h2>
                         <button class="au-btn au-btn-icon au-btn--blue">
                     </div>
                 </div>
@@ -18,15 +18,14 @@ include('conexion.php');
 <div>
 <?php
 $id = $_GET['id'];
-$sql = "UPDATE usuarios SET id_estado=2 WHERE id_usuario='".$id."'";
+$sql = "UPDATE productos SET id_estado=2 WHERE id_producto='".$id."'";
 mysqli_query($db, $sql);
 
 ?>
 
-
 <div class="row">
                 <div class="col-md-12">
-                    <h4>El usuario se actualizo de estado</h4>
+                    <h4>El producto se actualizo de estado</h4>
                     <div class="copyright">
                         <p>TODOS LOS DERECHOS RESERVADOS</p>
                         <p>COPYRIGHT © 2024 EMPRESA DEVSOFT</p>

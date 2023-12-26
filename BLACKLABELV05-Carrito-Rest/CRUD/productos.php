@@ -44,8 +44,8 @@ include('conexion.php');
                     <td><?php echo  $filas["precio_producto"] ?></td>
                     <td><?php echo  $filas["id_estado"] ?></td>
                     <td>
-                        <a href="#" class="accion editar">Editar</a>
-                        <a href="#" class="accion eliminar">Eliminar</a>
+                        <a href="productos_agregar.php" class="accion editar">Editar</a>
+                        <a href="productos_eliminar.php" class="accion eliminar">Eliminar</a>
                     </td>
                 </tr>
             <?php }?>

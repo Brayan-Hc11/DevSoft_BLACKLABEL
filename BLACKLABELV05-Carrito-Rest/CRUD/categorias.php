@@ -35,7 +35,7 @@ include('conexion.php');
                     <td><?php echo  $filas["categoria"] ?></td>
                     <td>
                         <a href="#" class="accion editar">Editar</a>
-                        <a href="#" class="accion eliminar">Eliminar</a>
+                        <!--<a href="#" class="accion eliminar">Eliminar</a>-->
                     </td>
                 </tr>
             <?php }?>
