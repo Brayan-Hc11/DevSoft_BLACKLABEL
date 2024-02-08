@@ -43,13 +43,13 @@ class iniForCliente{
 
                 </div>
             
-                <form action='' method='GET' class='cliente'>
-                    <input type='text' name='nombre' placeholder='Nombre' id='nombre'>
-                    <input type='text' name='correo' placeholder='Correo electronico' id='correo'>
-                    <input type='text' name='asunto' placeholder='Asunto' id='asunto'>
-                    <textarea name='mensaje' id='mensaje' placeholder='mensaje'></textarea>
+                <form action='https://formspree.io/f/mbjngbdj' method='POST' class='cliente'>
+                    <input type='text' name='name' placeholder='Nombre' id='nombre'>
+                    <input type='text' name='email' placeholder='Correo electronico' id='correo'>
+                    <input type='text' name='subject' placeholder='Asunto' id='asunto'>
+                    <textarea name='coments' id='mensaje' placeholder='mensaje'></textarea>
                    
-                    <button type='button'>Enviar</button>
+                    <button type='submit'>Enviar</button>
                     <button type='button'>Atras</button>
 
                 </form>
