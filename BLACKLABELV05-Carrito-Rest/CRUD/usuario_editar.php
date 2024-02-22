@@ -5,8 +5,13 @@ include_once('vistasuperior.php');
 if(isset($_GET['actualizar'])) {
     include('conexion.php');
 
+    // Obtener datos del formulario
     $idp = $_GET['txtid'];
     $documento = $_GET['txtdocumento'];
+    $nombre = $_GET['txtnombre']; // Agregar la recuperación de los otros campos
+    $apellido = $_GET['txtapellido'];
+    $correo = $_GET['txtcorreo'];
+    $id_estado = $_GET['txtestado'];
     
     // Resto de tus campos...
 
@@ -49,57 +54,61 @@ if(isset($_GET['actualizar'])) {
             <br>
             <div>
               <?php 
-include('conexion.php');
+// Consulta para obtener los datos del usuario a editar
+if(isset($_GET['id'])) {
+    include('conexion.php');
 
-// Ajusta la clave del array a 'id' en lugar de 'id_usuario'
-$id = $_GET['id'];
+    // Ajusta la clave del array a 'id' en lugar de 'id_usuario'
+    $id = $_GET['id'];
 
-// Utiliza una consulta preparada para mejorar la seguridad
-$sql = "SELECT * FROM Usuarios WHERE id_usuario = ?";
-$stmt = mysqli_prepare($db, $sql);
+    // Utiliza una consulta preparada para mejorar la seguridad
+    $sql = "SELECT * FROM usuarios WHERE id_usuario = ?";
 
-// Vincula el parámetro
-mysqli_stmt_bind_param($stmt, 'i', $id);
+    $stmt = mysqli_prepare($db, $sql);
 
-// Ejecuta la consulta
-mysqli_stmt_execute($stmt);
+    // Vincula el parámetro
+    mysqli_stmt_bind_param($stmt, 'i', $id);
 
-// Obtiene los resultados
-$resultado = mysqli_stmt_get_result($stmt);
+    // Ejecuta la consulta
+    mysqli_stmt_execute($stmt);
 
-while ($fila = mysqli_fetch_assoc($resultado)) {  
-    // Tu código para mostrar los datos
-}
-// Cierra la consulta preparada
-mysqli_stmt_close($stmt);
+    // Obtiene los resultados
+    $resultado = mysqli_stmt_get_result($stmt);
+
+    // Mueve esto dentro del bucle while
+    while ($fila = mysqli_fetch_assoc($resultado)) {  
+        // Tu código para mostrar los datos
 ?>
 
 <div class="formulario">
-                        <form action="" method="GET">
+    <form action="" method="GET">
 
-                            <input type="hidden" name="txtid" value="<?php echo $fila['id_usuario']?>">
+        <input type="hidden" name="txtid" value="<?php echo $fila['id_usuario']?>">
 
-                            <label for="">Documento usuario</label>
-                            <input type="text" name="txtdocumento" required value="<?php echo $fila['documento']?>">
-                            
-                            <label for="">Nombre usuario</label>
-                            <input type="text" name="txtnombre" required value="<?php echo $fila['nombre_usuario']?>">
+        <label for="">Documento usuario</label>
+        <input type="text" name="txtdocumento" required value="<?php echo $fila['documento']?>">
+        
+        <label for="">Nombre usuario</label>
+        <input type="text" name="txtnombre" required value="<?php echo $fila['nombre_usuario']?>">
 
-                            <label for="">Apellido usuario</label>
-                            <input type="text" name="txtapellido" required value="<?php echo $fila['apellido_usuario']?>">
-                            
-                            <label for="">Correo</label>
-                            <input type="text" name="txtcorreo" required value="<?php echo $fila['correo']?>">
+        <label for="">Apellido usuario</label>
+        <input type="text" name="txtapellido" required value="<?php echo $fila['apellido_usuario']?>">
+        
+        <label for="">Correo</label>
+        <input type="text" name="txtcorreo" required value="<?php echo $fila['correo']?>">
 
-                            <label for="">Estado</label>
-                            <input type="text" name="txtestado" required value="<?php echo $fila['id_estado']?>">
+        <label for="">Estado</label>
+        <input type="text" name="txtestado" required value="<?php echo $fila['id_estado']?>">
 
-                            <label for=""></label>
-                            <input type="submit" name="actualizar" value="actualizar un usuario">
-                        </form>
-                    </div>
-                <?php } ?>
-            </div>
-        </div>
-    </div>
+        <label for=""></label>
+        <input type="submit" name="actualizar" value="actualizar un usuario">
+    </form>
 </div>
+
+<?php
+    } // Cierra el bucle while
+
+    // Cierra la consulta preparada
+    mysqli_stmt_close($stmt);
+}
+?>
