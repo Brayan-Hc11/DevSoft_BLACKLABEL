@@ -1,1 +1,0 @@
-archivo emergente de soporte para suvir al git hub no borrar 
